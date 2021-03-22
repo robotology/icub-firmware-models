@@ -35,7 +35,7 @@ In order to generate the C++ code, open the `Embedded Coder` application on Simu
 <img src="img/embedded-coder.png" width="600px">  
 <br>
 
-Set the correct parameters in `C/C++ Settings->Code generation settings->Solver`.
+Set the correct parameters in `C/C++ Settings --> Code generation settings --> Solver`.
 
 <img src="img/solver.png" width="600px">
 
@@ -45,6 +45,6 @@ Finally, use the `Generate code` button.
 
 ## 5.1. Public parameters
 The parameters needs to have public access.
-To specify that, click on the ```Code interface``` button of tha App and then the ```Model parameters``` option.  
+To specify that, click on the `Code Interface` button of tha App and then the `Model parameters` option.  
 
 <img src="img/public-parameters.png" width="600px">
