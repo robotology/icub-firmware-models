@@ -1,7 +1,7 @@
 # 1. Introduction
 This folder contains the Simulink model for the Force-Torque sensor firmware.
 
-<img src="img/model001.png" width="600px">
+<img src="assets/model001.png" width="600px">
 
 The model is used for code generation.
 
@@ -32,12 +32,12 @@ The output is back-compatible with the current YARP implementation.
 In order to generate the C++ code, open the `Embedded Coder` application on Simulink tab.
 
 <br><br>
-<img src="img/embedded-coder.png" width="600px">  
+<img src="assets/embedded-coder.png" width="600px">  
 <br>
 
 Set the correct parameters in `C/C++ Settings --> Code generation settings --> Solver`.
 
-<img src="img/solver.png" width="600px">
+<img src="assets/solver.png" width="600px">
 
 Finally, use the `Generate code` button.
 
@@ -47,4 +47,4 @@ Finally, use the `Generate code` button.
 The parameters needs to have public access.
 To specify that, click on the `Code Interface` button of tha App and then the `Model parameters` option.  
 
-<img src="img/public-parameters.png" width="600px">
+<img src="assets/public-parameters.png" width="600px">
