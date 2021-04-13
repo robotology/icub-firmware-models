@@ -29,6 +29,8 @@ The output is back-compatible with the current YARP implementation.
 - Offset dimensions 6x1, 16 bit each, type: **unsigned**.
 
 # 4. Code generation
+
+## 4.1. Base operations
 In order to generate the C++ code, open the `Embedded Coder` application on Simulink tab.
 
 <br><br>
@@ -40,6 +42,35 @@ Set the correct parameters in `C/C++ Settings --> Code generation settings --> S
 <img src="assets/solver.png" width="600px">
 
 Finally, use the `Generate code` button.
+
+## 4.2. Advanced operations settings
+
+### 4.2.1. Matrix calculation for rows
+This setting in essential for the correct code generation for matrix multiplication.
+In the firmware memory at the moment the matrix is stored as a raws array.
+
+Select the following options:
+
+From *c++CODE->Settings*
+
+<img src="assets/matrix002.png" width="600px">  
+
+
+From *Code Generation->Interface*, select ```Row-major``` in **array layout**
+
+<img src="assets/matrix001.png" width="600px">
+
+From *Math and data Types->Interface*, select ```Use algorithms optimized ...```
+
+<img src="assets/matrix003.png" width="600px">
+
+### 4.2.2. Disable optimization for cast problems
+Select the following options:
+
+From *c++CODE->Settings*
+From *Code Generation->Optimization*, select ```Minimum (debugging)``` in **Level**
+
+<img src="assets/optimization001.png" width="600px">
 
 # 5. Note
 
