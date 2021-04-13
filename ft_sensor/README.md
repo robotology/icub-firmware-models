@@ -16,6 +16,7 @@ The model is used for code generation.
 
 # 3. The model
 The model implements the conversion from ADC raw values to Force-Torque values in the Strain2 sensor.
+The calculations inside the model are performed in single-precision (4 bytes).
 
 ## 3.1. Input
 ADC raw values are an array of 6 values, 16 bit each, type: **unsigned**.
@@ -26,7 +27,7 @@ The output is back-compatible with the current YARP implementation.
 
 ## 3.3. Parameters
 - Conversion matrix dimensions 6x6, 16 bit each, type: **integer**.
-- Offset dimensions 6x1, 16 bit each, type: **unsigned**.
+- Offset dimensions 6x1, 16 bit each, type: **integer**.
 
 # 4. Code generation
 
@@ -75,7 +76,7 @@ From *Code Generation->Optimization*, select ```Minimum (debugging)``` in **Leve
 # 5. Note
 
 ## 5.1. Public parameters
-The parameters needs to have public access.
-To specify that, click on the `Code Interface` button of tha App and then the `Model parameters` option.  
+The parameters need to have public access.
+To specify that, click on the `Code Interface` button of the App and then the `Model parameters` option.  
 
 <img src="assets/public-parameters.png" width="600px">
