@@ -1,7 +1,7 @@
 # 1. Introduction
 This folder contains the Simulink model for the Force-Torque sensor firmware.
 
-<img src="assets/model001.png" width="600px">
+<img src="assets/model.png" width="600px">
 
 The model is used for code generation.
 
@@ -54,24 +54,24 @@ Select the following options:
 
 From *c++CODE->Settings*
 
-<img src="assets/matrix002.png" width="600px">  
+<img src="assets/conf-02.png" width="600px">  
 
 
-From *Code Generation->Interface*, select ```Row-major``` in **array layout**
+From *Code Generation->Interface*, select `Row-major` in **array layout**
 
-<img src="assets/matrix001.png" width="600px">
+<img src="assets/conf-01.png" width="600px">
 
-From *Math and data Types->Interface*, select ```Use algorithms optimized ...```
+From *Math and data Types->Interface*, select `Use algorithms optimized ...`
 
-<img src="assets/matrix003.png" width="600px">
+<img src="assets/conf-03.png" width="600px">
 
 ### 4.2.2. Disable optimization for cast problems
 Select the following options:
 
 From *c++CODE->Settings*
-From *Code Generation->Optimization*, select ```Minimum (debugging)``` in **Level**
+From *Code Generation->Optimization*, select `Minimum (debugging)` in **Level**
 
-<img src="assets/optimization001.png" width="600px">
+<img src="assets/optimization.png" width="600px">
 
 # 5. Note
 
