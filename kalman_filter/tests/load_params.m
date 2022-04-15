@@ -3,18 +3,23 @@
 %
 % Author: Simone Girardi <simone.girardi@iit.it>
 
-load('robot_logger_device.mat');
+%load('robot_logger_device.mat');
+load('robot_logged_data.mat');
 Ts = 0.001;
 
-N = 25;
-p = robot_logger_device.joints_state.positions.data(N, :)';
-v = robot_logger_device.joints_state.velocities.data(N, :)';
-a = robot_logger_device.joints_state.accelerations.data(N, :)';
+%N = 25;
+%p = robot_logger_device.joints_state.positions.data(N, :)';
+%v = robot_logger_device.joints_state.velocities.data(N, :)';
+%a = robot_logger_device.joints_state.accelerations.data(N, :)';
+
+p = robot_logged_data.p;
+v = robot_logged_data.v;
+a = robot_logged_data.a;
 
 L = min([length(p), length(v), length(a)]);
-p = p(1:L);
-v = v(1:L);
-a = a(1:L);
+%p = p(1:L);
+%v = v(1:L);
+%a = a(1:L);
 t = (0:L-1)' * Ts;
 
 simin = [t p v a];
