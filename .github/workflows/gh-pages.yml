@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-    - 'docs'
+    - docs
   workflow_dispatch:
   repository_dispatch:
     types: [build_documentation]
