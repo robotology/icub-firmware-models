@@ -6,6 +6,8 @@ iCub Firmware Models
 
 This repository hosts all the models underlying the iCub Firmware.
 
+- 🌐 Browse our [online documentation](https://robotology.github.io/icub-firmware-models).  🚧 **Work in progress** 🚧
+
 ## Maintainers
 This repository is maintained by:
 
