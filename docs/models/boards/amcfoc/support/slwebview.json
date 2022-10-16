@@ -1,0 +1,28 @@
+{
+ "version":3,
+ "baseUrl":"support/slwebview_files",
+ "homeHid":1,
+ "sections":[
+  {
+   "hid":1,
+   "sid":"iterative_motion_controller",
+   "name":"iterative_motion_controller",
+   "fullname":"iterative_motion_controller",
+   "label":"iterative_motion_controller",
+   "parent":0,
+   "descendantIDs":[
+    2,
+    3
+   ],
+   "descendantsURL":"support/slwebview_files/iterative_motion_controller_diagrams_1.json",
+   "sysViewURL":"support/slwebview_files/iterative_motion_controller_p.json"
+  }
+ ],
+ "optViews":[
+ ],
+ "display":{
+  "informer":false,
+  "notes":false
+ },
+ "iconsUrl":"support/slwebview_files/icon.css"
+}
