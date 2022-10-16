@@ -3,8 +3,6 @@ name: GitHub Pages
 on:
   push:
     branches:
-    - 'master'
-    - 'devel'
     - 'docs'
   workflow_dispatch:
   repository_dispatch:
