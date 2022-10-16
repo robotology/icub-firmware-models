@@ -1,0 +1,57 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+    - docs
+  workflow_dispatch:
+  repository_dispatch:
+    types: [build_documentation]
+
+concurrency:
+  group: publish_gh_pages
+  cancel-in-progress: true
+
+jobs:
+  docs:
+    name: "Deploy"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout docs 
+        uses: actions/checkout@main
+        with:
+          ref: 'docs'
+
+      - name: Dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y python3-wheel python3-setuptools
+          pip install --upgrade Jinja2
+          pip install --user mkdocs
+          pip install --user $(mkdocs get-deps)
+          pip install --upgrade pygments
+          echo "${HOME}/.local/bin" >> ${GITHUB_PATH}
+        
+      - name: Configure Git
+        run: |
+          git config --global push.default upstream
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+      - name: Build Mkdocs
+        run: |
+          mkdocs build
+
+      - name: Create and prepare gh-pages anew
+        run: |
+          git checkout --orphan gh-pages
+          rm -R `ls -A | grep -v -E "^(.git|site)$"`
+          mv site/* ./
+
+      - name: Commit and push
+        run: |
+          git add .
+          git commit -m "publish site"
+          git push --force --set-upstream origin gh-pages

@@ -1,0 +1,9 @@
+{
+	"name": "iCub Firmware Models Documentation",
+	"build": {
+		"dockerfile": "../.gitpod.Dockerfile"
+	},
+	"extensions": [],
+	"forwardPorts": [8000],
+	"remoteUser": "gitpod"
+}
