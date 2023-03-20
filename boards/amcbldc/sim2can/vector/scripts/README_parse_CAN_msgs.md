@@ -28,4 +28,8 @@ Returns a new table with only the messages that contain the input value in the g
 
 Returns a new table where an ID is replaced by another number/text.
 
+`unpackTimetablePayload(can_timetable, can_payload_length)`
+
+Returns a new table composed by the CAN payload split by columns. The default payload length is 8.
+
 **Note:** Due to a Matlab limitation the new ID **must** be a 3 character string. 
