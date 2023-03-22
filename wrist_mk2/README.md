@@ -13,7 +13,7 @@ It seems impossible to find the **analytic solution** in closed form of the *dir
 -   Let's call $q_i$ the positions of the joints on the platform and $p_i$ the positions of the joints in the arms.
 -   The "L" shape of the connetcting rods forces each vector $q_i$ to be always orthogonal to its respective vector $p_i$ in all configurations.
 -   The euclidean distance $L$ between the $q_i$ and the respective $p_i$ is imposed to be constant by the connecting rod.
--   In the case of symmetrical structure, the coordinates of the platform joints in the rest configuration are $q_1=(1,0,0)$, $q_2=(-\frac{1}{2},\frac{\sqrt{3}}{2},0)$ e $q_3=(-\frac{1}{2},-\frac{\sqrt{3}}{2},0)$
+-   In the case of symmetrical structure, the coordinates of the platform joints in the rest configuration are $q_1=(1,0,0)$, $q_2=(-\frac{1}{2},\frac{\sqrt{3}}{2},0)$ and $q_3=(-\frac{1}{2},-\frac{\sqrt{3}}{2},0)$
 -   The coordinates of the arm joints, that rotates around the vertical axis, are $p_1=(\cos{\theta_1},\sin{\theta_1},-h)$, $p_2=(\cos{\theta_2},\sin{\theta_2},-h)$ and $p_3=(\cos{\theta_3},\sin{\theta_3},-h)$ with $h$ constant and with $\theta_i$ = rotations of the three motors. In the case of symmetrical structure, at rest we have $\theta_1=90^\circ$, $\theta_2=210^\circ$ and $\theta_3=330^\circ$.
 
 ## Analytic inverse Jacobian
