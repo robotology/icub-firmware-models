@@ -102,6 +102,6 @@ Once this is done, the .h and .cpp files contained in the WristDecoupler.zip gen
 
 that corresponds to the folder `icub-firmware/emBODY/eBcode/arch-arm/embobj/plus/mc`
 
-![folder](Folder.PNG)
+![folder](assets/Folder.PNG)
     
 
