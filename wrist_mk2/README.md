@@ -4,7 +4,7 @@ Wrist Mk2
 ![joint](assets/Joint.PNG)
 
 # The Mathematics of the spherical joint
-To find out more about the underlying equations, please visit our official documentation at https://icub-tech-iit.github.io/documentation/wrists/wrist_mk2/
+To find out more about the underlying equations, please visit our [official documentation](https://icub-tech-iit.github.io/documentation/wrists/wrist_mk2/).
 
 # Embedded firmware generation
 The coupling/decoupling subsystem is already configured for embedded software generation. 
