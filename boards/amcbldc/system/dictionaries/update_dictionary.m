@@ -28,6 +28,10 @@ p.Value.motorconfig.encoder_tolerance = uint8(0);
 p.Value.motorconfig.pole_pairs = uint8(7);
 p.Value.motorconfig.Vmax = single(24);
 p.Value.motorconfig.Vcc = single(44);
+p.Value.motorconfig.resistance = single(30);
+p.Value.motorconfig.inductance = single(271);
+p.Value.motorconfig.thermal_resistance = single(56);
+p.Value.motorconfig.thermal_time_constant = single(270);
 p.Value.CurLoopPID.P = single(2);
 p.Value.CurLoopPID.I = single(500);
 p.Value.CurLoopPID.D = single(0);
@@ -51,6 +55,8 @@ p.Value.thresholds.motorNominalCurrents = single(2);
 p.Value.thresholds.motorPeakCurrents = single(5);
 p.Value.thresholds.motorOverloadCurrents = single(10);
 p.Value.thresholds.motorPwmLimit = uint32(32000);
+p.Value.thresholds.motorCriticalTemperature = single(100);
+p.Value.environment_temperature = single(25);
 
 update_entry(section, id, p);
 
