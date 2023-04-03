@@ -52,7 +52,7 @@ p.Value.thresholds.motorPeakCurrents = single(5);
 p.Value.thresholds.motorOverloadCurrents = single(10);
 p.Value.thresholds.motorPwmLimit = uint32(32000);
 
-udpate_entry(section, id, p);
+update_entry(section, id, p);
 
 saveChanges(dictionary);
 close(dictionary);
@@ -61,7 +61,7 @@ clear;
 delete('export_dictionary.m');
 
 
-function udpate_entry(section, name, val)
+function update_entry(section, name, val)
 
     entry = find(section, 'Name', name);
     if isempty(entry)
