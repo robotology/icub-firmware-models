@@ -28,21 +28,30 @@ inline bool IsException(void)
     return(__get_IPSR() != 0U);
 }
 
-inline void rtw_mutex_lock(void) 
+inline void rtw_mutex_lock(void)
 {    
     if(false == IsException())
     {
-        NVIC_DisableIRQ(DMA1_Channel2_IRQn);  
-            
+    #ifdef STM32HAL_BOARD_AMCBLDC
+        NVIC_DisableIRQ(DMA1_Channel2_IRQn);
+    #endif    
+    #ifdef STM32HAL_BOARD_AMC2C
+        NVIC_DisableIRQ(BDMA_Channel2_IRQn);
+    #endif
     }  
 }
 
-inline void rtw_mutex_unlock(void) 
+inline void rtw_mutex_unlock(void)
 {
     if(false == IsException())
-    {       
+    {
+    #ifdef STM32HAL_BOARD_AMCBLDC
         NVIC_EnableIRQ(DMA1_Channel2_IRQn);
-    }  
+    #endif
+    #ifdef STM32HAL_BOARD_AMC2C
+        NVIC_EnableIRQ(BDMA_Channel2_IRQn);
+    #endif
+    }
 }
 
 #endif // RTW_MUTEX_H
