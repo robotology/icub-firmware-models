@@ -1,2 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Info location="sim2can" type="File"/>
+<Info Ref="sim2can" Type="Relative"/>
