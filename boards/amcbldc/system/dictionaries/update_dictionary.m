@@ -43,6 +43,7 @@ p.Value.VelLoopPID.D = single(0);
 p.Value.VelLoopPID.N = single(10);
 p.Value.VelLoopPID.shift_factor = uint8(0);
 p.Value.estimationconfig.velocity_mode = EstimationVelocityModes.MovingAverage;
+p.Value.estimationconfig.current_rms_lambda = single(1);
 p.Value.thresholds.jntPosMin = single(1);
 p.Value.thresholds.jntPosMax = single(359);
 p.Value.thresholds.hardwareJntPosMin = single(0);
