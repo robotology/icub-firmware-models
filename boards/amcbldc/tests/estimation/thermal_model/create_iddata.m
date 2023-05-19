@@ -1,15 +1,8 @@
 % Copyright (C) 2023 Fondazione Istituto Italiano di Tecnologia (IIT)
 % All Rights Reserved.
-function [idd] = create_iddata(camera, CAN, dataset_start_sample)
-
-    % Initial values
-    initial_temperature = 24.8; % C
-    deltaT0 = 0; % C
-    Rl = 25.9; % Ohm
-    mId = 3;
-    Ts = 0.1;
+function [idd] = create_iddata(camera, CAN, dataset_start_sample, Ts, mId)
     
-    camera_data = readtable(camera);
+    camera_data = readtable(camera, 'VariableNamingRule','preserve');
     camera_data.Properties.VariableNames = ["Time", "Temperature", "Frame"];
     
     CAN_data = load(CAN);
