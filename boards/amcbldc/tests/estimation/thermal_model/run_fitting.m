@@ -5,8 +5,8 @@
 %% Read datasets
 % Training set
 
-training_measurements = "0516/1.xlsx";
-training_input = "0516/n1.mat";
+training_measurements = "data/1.xlsx";
+training_input = "data/n1.mat";
 training_start_time_offset = 10000;
 training_Ts = 0.01;
 motor_ID = 3; % We assume that we gathered data where we logged 3 motors
@@ -20,8 +20,8 @@ idd_training.Name = "training";
 n_validation_sets = 3;
 idd_validations = cell(n_validation_sets, 1);
 
-validation_measurements = {"0516/4.xlsx", "0516/3.xlsx", "0516/2.xlsx"};
-validation_inputs = {"0516/n4.mat", "0516/n3.mat", "0516/n2.mat"};
+validation_measurements = {"data/4.xlsx", "data/3.xlsx", "data/2.xlsx"};
+validation_inputs = {"data/n4.mat", "data/n3.mat", "data/n2.mat"};
 
 
 for i=1:n_validation_sets    
