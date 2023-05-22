@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Info Type="StartUp" Visible="0" Icon="" File="architectures/physical_architecture.slx" Name="physical_architecture">
+    <Extension Value="ac0d65bf-de81-48e2-aa56-7029255aaaf1" Name="StartUpPrev"/>
+</Info>
