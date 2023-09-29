@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Info>
+    <MetadataNode>
+        <path value="ProjectData:type:Info">
+            <node name="Info">
+                <entry key="Name" value="common"/>
+            </node>
+        </path>
+        <path value="Root:type:Categories">
+            <path value="FileClassCategory:type:Category">
+                <node name="Info">
+                    <entry key="DataType" value="None"/>
+                    <entry key="Name" value="Classification"/>
+                    <entry key="ReadOnly" value="1"/>
+                    <entry key="SingleValued" value="1"/>
+                </node>
+                <path value="artifact:type:Label">
+                    <node name="Info">
+                        <entry key="Name" value="Artifact"/>
+                        <entry key="ReadOnly" value="READ_ONLY"/>
+                    </node>
+                </path>
+                <path value="convenience:type:Label">
+                    <node name="Info">
+                        <entry key="Name" value="Convenience"/>
+                        <entry key="ReadOnly" value="READ_ONLY"/>
+                    </node>
+                </path>
+                <path value="derived:type:Label">
+                    <node name="Info">
+                        <entry key="Name" value="Derived"/>
+                        <entry key="ReadOnly" value="READ_ONLY"/>
+                    </node>
+                </path>
+                <path value="design:type:Label">
+                    <node name="Info">
+                        <entry key="Name" value="Design"/>
+                        <entry key="ReadOnly" value="READ_ONLY"/>
+                    </node>
+                </path>
+                <path value="none:type:Label">
+                    <node name="Info">
+                        <entry key="Name" value="None"/>
+                        <entry key="ReadOnly" value="READ_ONLY"/>
+                    </node>
+                </path>
+                <path value="other:type:Label">
+                    <node name="Info">
+                        <entry key="Name" value="Other"/>
+                        <entry key="ReadOnly" value="READ_ONLY"/>
+                    </node>
+                </path>
+                <path value="test:type:Label">
+                    <node name="Info">
+                        <entry key="Name" value="Test"/>
+                        <entry key="ReadOnly" value="READ_ONLY"/>
+                    </node>
+                </path>
+            </path>
+        </path>
+        <path value="Root:type:Files">
+            <path value="models:type:File">
+                <node name="Info"/>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info"/>
+                </path>
+                <path value="motion_control:type:File">
+                    <node name="Info"/>
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info"/>
+                    </path>
+                    <path value="control:type:File">
+                        <node name="Info"/>
+                        <path value="1:type:DIR_SIGNIFIER">
+                            <node name="Info"/>
+                        </path>
+                    </path>
+                    <path value="estimation:type:File">
+                        <node name="Info"/>
+                        <path value="1:type:DIR_SIGNIFIER">
+                            <node name="Info"/>
+                        </path>
+                    </path>
+                    <path value="motor_controller.slx:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry key="UUID" value="FileClassCategory"/>
+                                <node name="Label">
+                                    <entry key="UUID" value="design"/>
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="supervision:type:File">
+                        <node name="Info"/>
+                        <path value="1:type:DIR_SIGNIFIER">
+                            <node name="Info"/>
+                        </path>
+                    </path>
+                </path>
+            </path>
+            <path value="system:type:File">
+                <node name="Info"/>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info"/>
+                </path>
+                <path value="dictionaries:type:File">
+                    <node name="Info"/>
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info"/>
+                    </path>
+                    <path value="newBoard.sldd:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry key="UUID" value="FileClassCategory"/>
+                                <node name="Label">
+                                    <entry key="UUID" value="design"/>
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+            </path>
+        </path>
+        <path value="Root:type:ProjectPath">
+            <path value="184ccfd3-b9f5-484e-98c8-4d7d7c546ecc:type:Reference">
+                <node name="Info">
+                    <entry key="Ref" value="models/motion_control/estimation"/>
+                    <entry key="Type" value="Relative"/>
+                </node>
+            </path>
+            <path value="1b493345-b7a2-44aa-8957-e09e0ab97c1f:type:Reference">
+                <node name="Info">
+                    <entry key="Ref" value="models/motion_control/control"/>
+                    <entry key="Type" value="Relative"/>
+                </node>
+            </path>
+            <path value="32cee4fd-e0aa-47ea-978a-f32b05728840:type:Reference">
+                <node name="Info">
+                    <entry key="Ref" value="scripts"/>
+                    <entry key="Type" value="Relative"/>
+                </node>
+            </path>
+            <path value="4922ef3b-abf0-46da-aa8c-c761b8d92988:type:Reference">
+                <node name="Info">
+                    <entry key="Ref" value="models/motion_control/supervision"/>
+                    <entry key="Type" value="Relative"/>
+                </node>
+            </path>
+            <path value="a2033d65-b153-4c96-8989-0b245cda1490:type:Reference">
+                <node name="Info">
+                    <entry key="Ref" value="system"/>
+                    <entry key="Type" value="Relative"/>
+                </node>
+            </path>
+            <path value="aa92c3e1-8be5-4c04-b314-b46220e6b5d7:type:Reference">
+                <node name="Info">
+                    <entry key="Ref" value="models/motion_control"/>
+                    <entry key="Type" value="Relative"/>
+                </node>
+            </path>
+            <path value="bdc74a2a-1175-4686-afcb-1cad7f4000b2:type:Reference">
+                <node name="Info">
+                    <entry key="Ref" value="models"/>
+                    <entry key="Type" value="Relative"/>
+                </node>
+            </path>
+            <path value="c00dd40a-f3ec-4511-b6cf-6b56645036b8:type:Reference">
+                <node name="Info">
+                    <entry key="Ref" value="system/dictionaries"/>
+                    <entry key="Type" value="Relative"/>
+                </node>
+            </path>
+        </path>
+    </MetadataNode>
+    <Files>
+        <File path="Common.prj" value="fe84b66d"/>
+        <File path="models/motion_control/control/control_foc.slx" value="9904bcd"/>
+        <File path="models/motion_control/control/control_outer.slx" value="94e58917"/>
+        <File path="models/motion_control/control" value="-1"/>
+        <File path="models/motion_control/estimation/estimation_velocity.slx" value="1fee632c"/>
+        <File path="models/motion_control/estimation/filter_current.slx" value="e0b5ce72"/>
+        <File path="models/motion_control/estimation/thermal_model.slx" value="8b3d3d64"/>
+        <File path="models/motion_control/estimation" value="-1"/>
+        <File path="models/motion_control/motor_controller.slx" value="7a541daa"/>
+        <File path="models/motion_control/supervision/motor_supervisor.slx" value="f0ad6d92"/>
+        <File path="models/motion_control/supervision" value="-1"/>
+        <File path="models/motion_control" value="-1"/>
+        <File path="models" value="-1"/>
+        <File path="resources/project/7oKVxVYWZ2WrUSsCBa_oqa7pZb8/LkE4zRwExLPPSDOG-GyPU0wp9d0d.xml" value="317cfbea"/>
+        <File path="resources/project/7oKVxVYWZ2WrUSsCBa_oqa7pZb8/LkE4zRwExLPPSDOG-GyPU0wp9d0p.xml" value="e62a8891"/>
+        <File path="resources/project/7oKVxVYWZ2WrUSsCBa_oqa7pZb8/MCFAyvx613-iozwmfExBN92p_7Md.xml" value="fbf03ea7"/>
+        <File path="resources/project/7oKVxVYWZ2WrUSsCBa_oqa7pZb8/MCFAyvx613-iozwmfExBN92p_7Mp.xml" value="9bd9d47f"/>
+        <File path="resources/project/7oKVxVYWZ2WrUSsCBa_oqa7pZb8" value="-1"/>
+        <File path="resources/project/DH9moqhEpU0QpuHSp9PTX5JtgDo/00Wb8GtrZuGRpelLQbcFd5NCEWId.xml" value="fbf03ea7"/>
+        <File path="resources/project/DH9moqhEpU0QpuHSp9PTX5JtgDo/00Wb8GtrZuGRpelLQbcFd5NCEWIp.xml" value="9bd9d47f"/>
+        <File path="resources/project/DH9moqhEpU0QpuHSp9PTX5JtgDo" value="-1"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/DjhF1YyQRQHF8BGsxG7KBp9JYf4d.xml" value="6fde3471"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/DjhF1YyQRQHF8BGsxG7KBp9JYf4p.xml" value="2ac2b465"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/EH3AJzvx_gP2j_QHg0EtVCSvleUd.xml" value="2906d712"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/EH3AJzvx_gP2j_QHg0EtVCSvleUp.xml" value="70c20dd4"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/FFiRsoJE9U1rrIG9nCWL9yfFFNQd.xml" value="732fd728"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/FFiRsoJE9U1rrIG9nCWL9yfFFNQp.xml" value="d3ac58c2"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/FnNJabYa5WTcTZRL9rmaENo8YhQd.xml" value="85113e1a"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/FnNJabYa5WTcTZRL9rmaENo8YhQp.xml" value="e24a1cbe"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/M-NLhf8gs5_PKwSKzWgirVyaJT4d.xml" value="cdbfa7c1"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/M-NLhf8gs5_PKwSKzWgirVyaJT4p.xml" value="adb668e9"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/fu60GBX4gwaQ-LpBPFSGK_XPw50d.xml" value="d57b689c"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/fu60GBX4gwaQ-LpBPFSGK_XPw50p.xml" value="c43e46ba"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/spSi0S57Kff6L_P4M6j6dzFy2_Ud.xml" value="df8291c1"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/spSi0S57Kff6L_P4M6j6dzFy2_Up.xml" value="cd7a453e"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/xOXA1N8SDthQuYARmFBBSR3vz9Ad.xml" value="87177779"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA/xOXA1N8SDthQuYARmFBBSR3vz9Ap.xml" value="9b805894"/>
+        <File path="resources/project/EEtUlUb-dLAdf0KpMVivaUlztwA" value="-1"/>
+        <File path="resources/project/GNMWgYwxGsjRVtgg-sSVd-xXPJc" value="-1"/>
+        <File path="resources/project/IDhMnXn6J-Ju2wh1nEFVZKhX41U/-pbKLtO6WcNWXrK44Wn8olwfA4Ad.xml" value="fbf03ea7"/>
+        <File path="resources/project/IDhMnXn6J-Ju2wh1nEFVZKhX41U/-pbKLtO6WcNWXrK44Wn8olwfA4Ap.xml" value="9bd9d47f"/>
+        <File path="resources/project/IDhMnXn6J-Ju2wh1nEFVZKhX41U/7oKVxVYWZ2WrUSsCBa_oqa7pZb8d.xml" value="fbf03ea7"/>
+        <File path="resources/project/IDhMnXn6J-Ju2wh1nEFVZKhX41U/7oKVxVYWZ2WrUSsCBa_oqa7pZb8p.xml" value="236b8161"/>
+        <File path="resources/project/IDhMnXn6J-Ju2wh1nEFVZKhX41U" value="-1"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/2kj09UetkV_lru3gvSPXnY6-nM4d.xml" value="6b7f743"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/2kj09UetkV_lru3gvSPXnY6-nM4p.xml" value="534446ef"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/KKyDJtbdIBOlaeHmIZd5VX6vqx8d.xml" value="c1cdfbfa"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/KKyDJtbdIBOlaeHmIZd5VX6vqx8p.xml" value="45d3ae04"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/QWNDYJD5mGW1bWYvPx9DtKnxzw4d.xml" value="823cb8e0"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/QWNDYJD5mGW1bWYvPx9DtKnxzw4p.xml" value="4d8527b6"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/R1RggVhA72agIvELiuhWPRS8F0Id.xml" value="c3d825a4"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/R1RggVhA72agIvELiuhWPRS8F0Ip.xml" value="d47d974d"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/aEHSZBIY-yve10yGis12Zr5DLZod.xml" value="9a1b2deb"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/aEHSZBIY-yve10yGis12Zr5DLZop.xml" value="65aaca22"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/j4xwF_j8iFTVayUMfxLgMnTbencd.xml" value="40e351d0"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/j4xwF_j8iFTVayUMfxLgMnTbencp.xml" value="b498b702"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/r8LR4nLmg9ai3oHrW1r_-KocQzkd.xml" value="ea5a318d"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs/r8LR4nLmg9ai3oHrW1r_-KocQzkp.xml" value="ea7019f1"/>
+        <File path="resources/project/NjSPEMsIuLUyIpr2u1Js5bVPsOs" value="-1"/>
+        <File path="resources/project/Project.xml" value="2d66388c"/>
+        <File path="resources/project/aPSZTDXRjCsxkLD0Rd1_fiBDTLQ/dCH3sRzeKdhf0RKOhtZCvQWzhW0d.xml" value="fbf03ea7"/>
+        <File path="resources/project/aPSZTDXRjCsxkLD0Rd1_fiBDTLQ/dCH3sRzeKdhf0RKOhtZCvQWzhW0p.xml" value="9bd9d47f"/>
+        <File path="resources/project/aPSZTDXRjCsxkLD0Rd1_fiBDTLQ/sTsuWbeCzEOx_n4yvoVxkc6sp5kd.xml" value="fbf03ea7"/>
+        <File path="resources/project/aPSZTDXRjCsxkLD0Rd1_fiBDTLQ/sTsuWbeCzEOx_n4yvoVxkc6sp5kp.xml" value="20d39766"/>
+        <File path="resources/project/aPSZTDXRjCsxkLD0Rd1_fiBDTLQ" value="-1"/>
+        <File path="resources/project/eV3XdnzhiO46fPN6u5rTNnsPlX4/geurgLCwRnz8JTEss6-NWWwZ-G8d.xml" value="fbf03ea7"/>
+        <File path="resources/project/eV3XdnzhiO46fPN6u5rTNnsPlX4/geurgLCwRnz8JTEss6-NWWwZ-G8p.xml" value="9bd9d47f"/>
+        <File path="resources/project/eV3XdnzhiO46fPN6u5rTNnsPlX4" value="-1"/>
+        <File path="resources/project/fjRQtWiSIy7hIlj-Kmk87M7s21k/NjSPEMsIuLUyIpr2u1Js5bVPsOsd.xml" value="bb08e3b0"/>
+        <File path="resources/project/fjRQtWiSIy7hIlj-Kmk87M7s21k/NjSPEMsIuLUyIpr2u1Js5bVPsOsp.xml" value="c5d9fdd6"/>
+        <File path="resources/project/fjRQtWiSIy7hIlj-Kmk87M7s21k" value="-1"/>
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/IDhMnXn6J-Ju2wh1nEFVZKhX41Ud.xml" value="fbf03ea7"/>
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/IDhMnXn6J-Ju2wh1nEFVZKhX41Up.xml" value="ff656d6f"/>
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/aPSZTDXRjCsxkLD0Rd1_fiBDTLQd.xml" value="fbf03ea7"/>
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ/aPSZTDXRjCsxkLD0Rd1_fiBDTLQp.xml" value="3c355393"/>
+        <File path="resources/project/qaw0eS1zuuY1ar9TdPn1GMfrjbQ" value="-1"/>
+        <File path="resources/project/root/EEtUlUb-dLAdf0KpMVivaUlztwAp.xml" value="44d17b27"/>
+        <File path="resources/project/root/GiiBklLgTxteCEmomM8RCvWT0nQd.xml" value="3b8ce5aa"/>
+        <File path="resources/project/root/GiiBklLgTxteCEmomM8RCvWT0nQp.xml" value="c3800a56"/>
+        <File path="resources/project/root/fjRQtWiSIy7hIlj-Kmk87M7s21kp.xml" value="27135f28"/>
+        <File path="resources/project/root/qaw0eS1zuuY1ar9TdPn1GMfrjbQp.xml" value="128bc141"/>
+        <File path="resources/project/rootp.xml" value="fbf03ea7"/>
+        <File path="resources/project/root" value="-1"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k/9w0lDixha_PsKZLvDDfAiZQ21gMd.xml" value="317cfbea"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k/9w0lDixha_PsKZLvDDfAiZQ21gMp.xml" value="76300c31"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k/DH9moqhEpU0QpuHSp9PTX5JtgDod.xml" value="fbf03ea7"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k/DH9moqhEpU0QpuHSp9PTX5JtgDop.xml" value="4c8a721b"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k/KhJmMuTFKIhVUNrcEmwd5t0lSJ8d.xml" value="fbf03ea7"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k/KhJmMuTFKIhVUNrcEmwd5t0lSJ8p.xml" value="9bd9d47f"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k/eV3XdnzhiO46fPN6u5rTNnsPlX4d.xml" value="fbf03ea7"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k/eV3XdnzhiO46fPN6u5rTNnsPlX4p.xml" value="e4209895"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k/sXzhPZIC1KR2jvT7Bcy38UQdLMkd.xml" value="fbf03ea7"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k/sXzhPZIC1KR2jvT7Bcy38UQdLMkp.xml" value="be9195d7"/>
+        <File path="resources/project/sTsuWbeCzEOx_n4yvoVxkc6sp5k" value="-1"/>
+        <File path="resources/project/sXzhPZIC1KR2jvT7Bcy38UQdLMk/kgFQ-CN7LhkSGOXjSSaBSijeikkd.xml" value="fbf03ea7"/>
+        <File path="resources/project/sXzhPZIC1KR2jvT7Bcy38UQdLMk/kgFQ-CN7LhkSGOXjSSaBSijeikkp.xml" value="9bd9d47f"/>
+        <File path="resources/project/sXzhPZIC1KR2jvT7Bcy38UQdLMk" value="-1"/>
+        <File path="resources/project/uuid-3233b844-4643-44ef-8d93-e3714b0422a0.xml" value="fbf03ea7"/>
+        <File path="resources/project" value="-1"/>
+        <File path="resources" value="-1"/>
+        <File path="system/dictionaries/newBoard.sldd" value="503e76ae"/>
+        <File path="system/dictionaries" value="-1"/>
+        <File path="system" value="-1"/>
+    </Files>
+    <Date value="September 28, 2023 3:19:27 PM"/>
+</Info>
