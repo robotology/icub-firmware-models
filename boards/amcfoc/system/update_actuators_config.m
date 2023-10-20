@@ -19,7 +19,7 @@ function update_actuators_config
     % Create the data structure ActuatorInitConfMultiple
     % The structure is an array of ActuatorConfiguration
     % The dimension of the array depends on the number of actuators
-    configure_actuators;
+    actuators_configuration;
     p.Value = ActuatorInitConfMultiple(1:numOfActuators);
     
     % Set the parameter in the initial configuration and save the dictionary
