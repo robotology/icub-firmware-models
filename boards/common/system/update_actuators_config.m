@@ -11,7 +11,7 @@ function update_actuators_config
     p = Simulink.Parameter;
     p.DataType = 'Bus: ActuatorConfiguration';
     p.CoderInfo.StorageClass = 'ExportedGlobal';
-    p.CoderInfo.Identifier = "InitConfParams";
+    p.CoderInfo.Identifier = "MotionControlInitConf";
     
     % Create the data structure ActuatorInitConfMultiple
     % The structure is an array of ActuatorConfiguration
@@ -20,7 +20,7 @@ function update_actuators_config
     p.Value = MotionControlInitConf;
     
     % Set the parameter in the initial configuration and save the dictionary
-    initparams_entry = dd.getEntry("InitConfParams");
+    initparams_entry = dd.getEntry("MotionControlInitConf");
     initparams_entry.setValue(p);
     saveChanges(dict);
     disp("Initial configuration of motion controller was saved successfully to dictionary")
