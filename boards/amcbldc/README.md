@@ -10,7 +10,7 @@ AMCBLDC Model-Based Firmware
 - Simulink Test
 - Stateflow
 
-👉🏻 MATLAB release: R2022b.
+👉🏻 MATLAB release: R2023b.
 
 Required toolboxes and blocksets can be retrieved by opening the project and running:
 ```matlab
