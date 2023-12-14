@@ -17,6 +17,7 @@ p.CoderInfo.Identifier = id;
 p.Value = Simulink.Bus.createMATLABStruct('ConfigurationParameters');
 
 p.Value.motorconfig.has_hall_sens = true;
+p.Value.motorconfig.hall_sens_offset = single(30);
 p.Value.motorconfig.has_quadrature_encoder = true;
 p.Value.motorconfig.has_speed_quadrature_encoder = false;
 p.Value.motorconfig.has_torque_sens = false;
