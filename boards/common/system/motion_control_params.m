@@ -54,6 +54,7 @@ MotionControlInitConf.motor.has_speed_quadrature_encoder = false;
 MotionControlInitConf.motor.has_torque_sens = false;
 MotionControlInitConf.motor.use_index = false;
 MotionControlInitConf.motor.enable_verbosity = false;
+MotionControlInitConf.motor.hall_sensors_offset = int16(0);
 MotionControlInitConf.motor.rotor_encoder_resolution = int16(0);
 MotionControlInitConf.motor.rotor_index_offset = int16(0);
 MotionControlInitConf.motor.encoder_tolerance = uint8(0);
