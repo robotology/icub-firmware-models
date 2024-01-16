@@ -1,5 +1,5 @@
-AMCBLDC Model-Based Firmware
-============================
+Model-Based Firmware
+====================
 
 ### Requirements
 - MATLAB
@@ -9,6 +9,8 @@ AMCBLDC Model-Based Firmware
 - Motor Control Blockset
 - Simulink Test
 - Stateflow
+- Variant Manager for Simulink
+- Embedded Coder Support Package for ARM Cortex-M Processors
 
 👉🏻 MATLAB release: R2023b.
 
