@@ -6,10 +6,7 @@ function set_actuators_number
     % parameters need to be vectorized
 
     % Here you need to list the variables that you want to vectorize
-    entries_to_modify = [
-        "Actuators" 
-        "InitConfParams"
-        ];
+    entries_to_vectorize = ["AmcFocInitConf"];
 
     % Get reference to design data of dictionary
     dict = Simulink.data.dictionary.open("amcfoc.sldd");
@@ -18,17 +15,23 @@ function set_actuators_number
     % find desired number of actuators
     numOfActuators = dd.getEntry("numberOfActuators").getValue;
       
-    for i=1:length(entries_to_modify)
+    for i=1:length(entries_to_vectorize)
     
         % get reference to entry to modify the dimension
-        e = dd.getEntry(entries_to_modify(i));
+
+        if(~dd.exist(entries_to_vectorize(i)))        
+            warning("The entry " + entries_to_vectorize(i) + " was not found, skipping.");
+            continue
+        end
+
+        e = dd.getEntry(entries_to_vectorize(i));
 
         % get reference to the value of the entry
         simpar = e.getValue;
 
         if(~isempty(simpar.Value))
-            warning("The field 'Value' of " + entries_to_modify(i) + " is not empty.");
-            reply = input("Would you like to clear " + entries_to_modify(i) + "? " + ...
+            warning("The field 'Value' of " + entries_to_vectorize(i) + " is not empty.");
+            reply = input("Would you like to clear " + entries_to_vectorize(i) + "? " + ...
                     "Choosing No will skip the entry. [Y/n]", "s");
             
             if(lower(reply) == "n")

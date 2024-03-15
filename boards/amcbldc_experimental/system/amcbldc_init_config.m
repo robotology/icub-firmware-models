@@ -5,7 +5,7 @@
 % -------------------------------------------------------------------
 
 %% CONFIGURATION FOR FIRST MOTOR
-
+function MotionControlInitConf = amcbldc_init_config
 MotionControlInitConf(1).thresholds = struct;
 MotionControlInitConf(1).thresholds.jntVelMax = single(40000);
 MotionControlInitConf(1).thresholds.motorNominalCurrents = single(0.35);
