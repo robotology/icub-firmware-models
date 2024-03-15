@@ -4,7 +4,7 @@
 %  in the MATLAB base workspace.
 % -------------------------------------------------------------------
 
-function MotionControlInitConf = motion_control_params
+function MotionControlInitConf = motion_control_params_template
     MotionControlInitConf.thresholds = struct;
     MotionControlInitConf.thresholds.jntVelMax = single(40000);
     MotionControlInitConf.thresholds.motorNominalCurrents = single(0.35);
