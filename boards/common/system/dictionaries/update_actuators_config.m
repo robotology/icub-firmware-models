@@ -25,8 +25,6 @@ function update_actuators_config(dictionary, init_conf_dictionary_name, init_con
     % Create the data structure ActuatorInitConfMultiple
     % The structure is an array of ActuatorConfiguration
     % The dimension of the array depends on the number of actuators
-    motion_control_params;
-
     if(length(init_conf_data) ~= numOfActuators)
         throw("numberOfActuators does not match the size of " + init_conf_data)
     end
@@ -44,7 +42,7 @@ function update_actuators_config(dictionary, init_conf_dictionary_name, init_con
         initparams_entry.setValue(p);
     end
     saveChanges(dict);
-    disp("Initial configuration of " + numOfActuators + " actuators called " + ...
+    disp("Initial configuration of " + numOfActuators + " actuator(s) called " + ...
         init_conf_dictionary_name + " was saved successfully to dictionary")
 end
 
