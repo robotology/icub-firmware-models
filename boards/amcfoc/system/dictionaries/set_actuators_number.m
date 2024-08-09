@@ -6,7 +6,7 @@ function set_actuators_number
     % parameters need to be vectorized
 
     % Here you need to list the variables that you want to vectorize
-    entries_to_vectorize = ["AmcFocInitConf"];
+    entries_to_vectorize = "AmcFocInitConf";
 
     % Get reference to design data of dictionary
     dict = Simulink.data.dictionary.open("amcfoc.sldd");
