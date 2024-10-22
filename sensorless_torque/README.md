@@ -8,8 +8,7 @@ The **LuGre Friction Model** is a dynamic friction model used to represent the c
 2. [Mathematical Representation](#mathematical-representation)
 3. [Parameters of the LuGre Model](#parameters-of-the-lugre-model)
 4. [Friction Regimes](#friction-regimes)
-5. [Plots and Graphs](#plots-and-graphs)
-6. [Conclusion](#conclusion)
+5. [Conclusion](#conclusion)
 
 ---
 
@@ -24,28 +23,28 @@ The LuGre model was introduced to overcome limitations of classical friction mod
 The LuGre friction model is defined by the following set of equations:
 
 ### 1. State equation
-The state variable \( z \) represents the deflection of bristles at the friction contact:
+The state variable $z$ represents the deflection of bristles at the friction contact:
 
-\[
-\dot{z} = v - rac{|v|}{\sigma_0} z
-\]
+$$
+\dot{z} = v - \frac{|v|}{\sigma_0} z
+$$
 
 where:
-- \( v \) is the relative velocity between the two surfaces.
-- \( z \) is the internal state variable representing the bristle deformation.
-- \( \sigma_0 \) is the stiffness coefficient of the bristles.
+- $v$ is the relative velocity between the two surfaces.
+- $z$ is the internal state variable representing the bristle deformation.
+- $\sigma_0$ is the stiffness coefficient of the bristles.
 
 ### 2. Friction force equation
 The total friction force is given by:
 
-\[
-F_f = \sigma_0 z + \sigma_1 \dot{z} + \sigma_2 v
-\]
+$$
+F_f = \sigma_0 z + \sigma_1 \dot{z} + K_w v
+$$
 
 where:
-- \( \sigma_0 \) is the stiffness coefficient of the bristles.
-- \( \sigma_1 \) is the damping coefficient of the bristles.
-- \( \sigma_2 \) is the viscous friction coefficient.
+- $\sigma_0$ is the stiffness coefficient of the bristles.
+- $\sigma_1$ is the damping coefficient of the bristles.
+- $K_w$ is the viscous friction coefficient.
 
 ---
 
@@ -53,12 +52,12 @@ where:
 
 The model has several parameters, which need to be tuned according to the system being simulated:
 
-1. **\( \sigma_0 \)**: Stiffness coefficient – represents the rigidity of microscopic surface asperities.
-2. **\( \sigma_1 \)**: Damping coefficient – describes the energy dissipation during deformation of surface asperities.
-3. **\( \sigma_2 \)**: Viscous friction coefficient – accounts for the viscous effect at high velocities.
-4. **\( F_c \)**: Coulomb friction force – the steady-state friction force at constant velocity.
-5. **\( F_s \)**: Static friction force – the maximum force that resists motion before sliding occurs.
-6. **\( v_s \)**: Stribeck velocity – the velocity at which the friction starts to drop from static to kinetic friction.
+1. **$\sigma_0$**: Stiffness coefficient – represents the rigidity of microscopic surface asperities.
+2. **$\sigma_1$**: Damping coefficient – describes the energy dissipation during deformation of surface asperities.
+3. **$\sigma_2$**: Viscous friction coefficient – accounts for the viscous effect at high velocities.
+4. **$F_c$**: Coulomb friction force – the steady-state friction force at constant velocity.
+5. **$F_s$**: Static friction force – the maximum force that resists motion before sliding occurs.
+6. **$V_th$**: Stribeck velocity – the velocity at which the friction starts to drop from static to kinetic friction.
 
 ---
 
@@ -75,7 +74,7 @@ The LuGre model describes three main friction regimes:
 ### Friction Force vs. Velocity
 The following plot shows the friction force as a function of relative velocity. The LuGre model captures the Stribeck effect, where friction decreases as velocity increases from zero, followed by a steady Coulomb friction force.
 
-![Friction Force vs Velocity](https://example.com/plot1.png)
+![Friction Force vs Velocity](assets/Plot.png)
 
   
 ---
