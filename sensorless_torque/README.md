@@ -55,6 +55,8 @@ where:
 - $\sigma_1$ is the damping coefficient of the bristles.
 - $K_w$ is the viscous friction coefficient.
 
+![Stribeck](assets/Stribeck.png)
+
 ---
 
 ## Parameters of the LuGre Model
