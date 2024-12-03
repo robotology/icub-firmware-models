@@ -1,6 +1,14 @@
 clear
 clc
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%         INPUT SEQUENCE HERE
+%
+M=load('data\ergojoint_mid_calibration.mat','data');
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 KmOpt = 0.0;
 KwOpt = 0.0;
 FcOpt = 0.0;
@@ -9,12 +17,11 @@ S0Opt = 0.0;
 S1Opt = 0.0;
 VtOpt = 0.0;
 
-M=load('data\ergojoint_mid_calibration.mat','data');
-
 sz = size(M.data);
 N = sz(2);
 warmup = N/5;
 
+time        = M.data(1,:);
 current     = M.data(2,:);
 velocity    = M.data(3,:);
 torque_meas = M.data(4,:);
@@ -160,13 +167,16 @@ err = 0.0;
 
 Z = 0.0;
 
+time_prev = time(1);
+
 for i=1:N
 
     gV = FcOpt + FsOpt*exp(-abs(velocity(i)/VtOpt));
 
     Zdot = (velocity(i) - abs(velocity(i))*S0*Z/gV);
 
-    Z = Z + 0.001*Zdot;
+    Z = Z + (time(i)-time_prev)*Zdot;
+    time_prev = time(i);
 
     friction_calc = KwOpt*velocity(i) + S0*Z + S1*Zdot;
 
@@ -191,16 +201,20 @@ S1A = S1Opt-dS1; S1B = S1Opt+dS1;
 
 end
 
-Km = KmOpt
-Kw = KwOpt
-S0 = S0Opt
-S1 = S1Opt
-Fc_pos = FcOpt
-Fc_neg = FcOpt
-Fs_pos = FcOpt+FsOpt
-Fs_neg = FcOpt+FsOpt
-Vth = VtOpt
+% Km = KmOpt
+% Kw = KwOpt
+% S0 = S0Opt
+% S1 = S1Opt
+% Fc_pos = FcOpt
+% Fc_neg = FcOpt
+% Fs_pos = FcOpt+FsOpt
+% Fs_neg = FcOpt+FsOpt
+% Vth = VtOpt
 
-
+fprintf('Estimated LuGre parameters:\n\n')
+fprintf('Km       %f\nKw       %f\n',KmOpt,KwOpt)
+fprintf('S0       %f\nS1       %f\n',S0Opt,S1Opt)
+fprintf('Fc_pos   %f\nFc_neg   %f\n',FcOpt,FcOpt)
+fprintf('Fs_pos   %f\nFs_neg   %f\nVth      %f\n\n',FcOpt+FsOpt,FcOpt+FsOpt,Vt)
 
 
