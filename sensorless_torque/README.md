@@ -3,6 +3,8 @@
 
 The **LuGre Friction Model** is a dynamic friction model used to represent the complex behavior of friction in mechanical systems. It enhances traditional friction models by introducing state variables to describe the internal microscopic effects at the contact interface, such as stick-slip phenomena.
 
+Reference paper: [Revisiting the LuGre friction model](https://ieeexplore.ieee.org/document/4653109)
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Mathematical Representation](#mathematical-representation)
@@ -113,3 +115,44 @@ For example, with the EMS board:
 that corresponds to the folder `icub-firmware\emBODY\eBcode\arch-arm\mbd\torque_estimator`
 
 ![folder](assets/Folder.png)
+
+
+# LuGre parameters estimation
+An automatic parameter estimation tool is provided in this folder:
+
+[param_estimator.m](param_estimator.m)
+
+The algorithm uses brute force in iterative steps, starting from a wide range of possible values and coarse quantization, and going on narrowing the range and increasing the resolution at each step.  
+Since the number of parameters is still quite high, the algorithm estimates the LuGre parameters in 3 stages:
+
+1.  Km (motor torque constant), Kw (viscous friction constant), Fc (Coulomb force constant)
+2.  Fs (Stribeck force constant), Vth (Stribeck force velocity threshold)
+3.  S0, S1 (LuGre hysteresis model stiffness and damping).
+
+The search space must be initially limited in some way, thus the Km torque constant, Kw viscous friction constant and Fc Coulomb force constant initial ranges are restricted to 1/5 to 5x the values measured in the ErgoCub new medium joint, covering in this way a wide range of present and future joint sizes.
+
+
+## Data input format
+The script requires an input with a 4xN matrix containing:
+
+1.  time [s]
+2.  measured current [A]
+3.  measured velocity [rad/s], motor side
+4.  measured joint torque [Nm], joint side.
+
+The data source experiment should be in some way meaningful, i.e. with typical velocity and torque back and forth motion cycles, duration > 20 s, about 1 kHz sampling. 
+
+Example data file: [ergojoint_mid_calibration.mat](data/ergojoint_mid_calibration.mat)
+
+![Example data plot](assets/DataExample.png)
+
+The file path must be inserted in the script first lines, here:
+
+![Input filepath](assets/filepath.png)
+
+## Calculations and output
+After a bunch of seconds (depending on the size of the dataset), the output is provided in this format:
+
+![Ouput](assets/Output.png)
+
+The output parameter values can be copied in the corresponding LUGRE section of the hardware/motorControl robot configuration .xml files.
