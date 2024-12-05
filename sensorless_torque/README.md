@@ -118,9 +118,8 @@ that corresponds to the folder `icub-firmware\emBODY\eBcode\arch-arm\mbd\torque_
 
 
 # LuGre parameters estimation
-An automatic parameter estimation tool is provided in this folder:
-
-[param_estimator.m](param_estimator.m)
+An automatic parameter estimation tool is provided:
+- [`param_estimator.m`](param_estimator.m)
 
 The algorithm uses brute force in iterative steps, starting from a wide range of possible values and coarse quantization, and going on narrowing the range and increasing the resolution at each step.  
 Since the number of parameters is still quite high, the algorithm estimates the LuGre parameters in 3 stages:
