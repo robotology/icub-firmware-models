@@ -121,7 +121,7 @@ that corresponds to the folder `icub-firmware\emBODY\eBcode\arch-arm\mbd\torque_
 An automatic parameter estimation tool is provided:
 - [`param_estimator.m`](param_estimator.m)
 
-The algorithm uses brute force in iterative steps, starting from a wide range of possible values and coarse quantization, and going on narrowing the range and increasing the resolution at each step.  
+The algorithm uses brute force in iterative steps, starting from a wide range of possible values and coarse quantization, and going on narrowing the range and increasing the resolution at each step. Each step tries all the possible combinations of the parameters involved, and with this set of parameter values it performs a full net torque calculation given the current and velocity sequence provided, and then it compares the calculated torque curve with the measured one, keeping track of the combination that gives the best result in the sense of RMSE. 
 Since the number of parameters is still quite high, the algorithm estimates the LuGre parameters in 3 stages:
 
 1.  `Km` (motor torque constant), `Kw` (viscous friction constant), `Fc` (Coulomb force constant);
