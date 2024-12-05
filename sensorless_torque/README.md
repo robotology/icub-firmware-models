@@ -147,7 +147,7 @@ Example data file: [ergojoint_mid_calibration.mat](data/ergojoint_mid_calibratio
 
 The file path must be inserted in the script first lines, here:
 
-![Input filepath](assets/filepath.png)
+![Input filepath](assets/FilePath.png)
 
 ## Calculations and output
 After a bunch of seconds (depending on the size of the dataset), the output is provided in this format:
