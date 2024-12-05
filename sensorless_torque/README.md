@@ -134,9 +134,9 @@ The search space must be initially limited in some way, thus the Km torque const
 ## Data input format
 The script requires an input with a 4xN matrix containing:
 
-1.  time [s]
-2.  measured current [A]
-3.  measured velocity [rad/s], motor side
+1.  time [s];
+2.  measured current [A];
+3.  measured velocity [rad/s], motor side;
 4.  measured joint torque [Nm], joint side.
 
 The data source experiment should be in some way meaningful, i.e. with typical velocity and torque back and forth motion cycles, duration > 20 s, about 1 kHz sampling. 
