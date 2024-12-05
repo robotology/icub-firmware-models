@@ -195,7 +195,6 @@ end
 
 end
 end
-
 S0A = S0Opt-dS0; S0B = S0Opt+dS0;
 S1A = S1Opt-dS1; S1B = S1Opt+dS1;
 
@@ -212,9 +211,9 @@ end
 % Vth = VtOpt
 
 fprintf('Estimated LuGre parameters:\n\n')
-fprintf('Km       %f\nKw       %f\n',KmOpt,KwOpt)
-fprintf('S0       %f\nS1       %f\n',S0Opt,S1Opt)
-fprintf('Fc_pos   %f\nFc_neg   %f\n',FcOpt,FcOpt)
-fprintf('Fs_pos   %f\nFs_neg   %f\nVth      %f\n\n',FcOpt+FsOpt,FcOpt+FsOpt,Vt)
+fprintf('Km       %f Nm/A\nKw       %f Nm/(rad/s)\n',KmOpt,KwOpt)
+fprintf('S0       %f Nm/rad\nS1       %f Nm/(rad/s)\n',S0Opt,S1Opt)
+fprintf('Fc_pos   %f Nm\nFc_neg   %f Nm\n',FcOpt,FcOpt)
+fprintf('Fs_pos   %f Nm\nFs_neg   %f Nm\nVth      %f rad/s\n\n',FcOpt+FsOpt,FcOpt+FsOpt,Vt)
 
 
