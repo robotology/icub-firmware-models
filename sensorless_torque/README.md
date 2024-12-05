@@ -124,9 +124,9 @@ An automatic parameter estimation tool is provided:
 The algorithm uses brute force in iterative steps, starting from a wide range of possible values and coarse quantization, and going on narrowing the range and increasing the resolution at each step.  
 Since the number of parameters is still quite high, the algorithm estimates the LuGre parameters in 3 stages:
 
-1.  Km (motor torque constant), Kw (viscous friction constant), Fc (Coulomb force constant)
-2.  Fs (Stribeck force constant), Vth (Stribeck force velocity threshold)
-3.  S0, S1 (LuGre hysteresis model stiffness and damping).
+1.  `Km` (motor torque constant), `Kw` (viscous friction constant), `Fc` (Coulomb force constant);
+2.  `Fs` (Stribeck force constant), `Vth` (Stribeck force velocity threshold);
+3.  `S0`, `S1` (LuGre hysteresis model stiffness and damping).
 
 The search space must be initially limited in some way, thus the Km torque constant, Kw viscous friction constant and Fc Coulomb force constant initial ranges are restricted to 1/5 to 5x the values measured in the ErgoCub new medium joint, covering in this way a wide range of present and future joint sizes.
 
