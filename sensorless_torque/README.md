@@ -139,7 +139,7 @@ The script requires an input with a 4xN matrix containing:
 3.  measured velocity [rad/s], motor side;
 4.  measured joint torque [Nm], joint side.
 
-The data source experiment should be in some way meaningful, i.e. with typical velocity and torque back and forth motion cycles, duration > 20 s, about 1 kHz sampling. 
+The data source experiment should be in some way meaningful: i.e., undergoing typical velocity and torque, back and forth motion cycles, time duration > 20 s, about 1 kHz sample rate. 
 
 Example data file: [ergojoint_mid_calibration.mat](data/ergojoint_mid_calibration.mat)
 
