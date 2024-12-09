@@ -1,0 +1,228 @@
+[
+ {
+  "sid":"estimation_velocity",
+  "inspector":{
+   "params":[
+    "ModelVersion",
+    "LastModifiedDate",
+    "LibraryLinkDisplay",
+    "ModelBrowserVisibility",
+    "Dirty",
+    "Description"
+   ],
+   "values":[
+    "7.3",
+    "Fri Aug 23 16:06:24 2024",
+    "disabled",
+    "off",
+    "off",
+    ""
+   ],
+   "tabs":[
+   ],
+   "tabs_idx":[
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"estimation_velocity:284",
+  "inspector":{
+   "params":[
+    "X",
+    "N",
+    "MaskDescription",
+    "Description"
+   ],
+   "values":[
+    "(0:15) * EstimationVelocity_Ts",
+    "1",
+    "dsp:DSPPolyfunBlockDialog:LeastSquarePolynomialFit_MaskDesc",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "Documentation"
+   ],
+   "tabs_idx":[
+    0,
+    2
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"SubSystem",
+   "masktype":"Least Squares Polynomial Fit",
+   "referenceblock":"dsppolyfun/Least Squares\nPolynomial Fit"
+  }
+ },
+ {
+  "sid":"estimation_velocity:284:3",
+  "inspector":{
+   "params":[
+    "SigAttribCheckMethod",
+    "Complexity",
+    "Frame",
+    "DimsCheckMethod",
+    "Dimensions",
+    "DatatypeCheckMethod",
+    "DatatypeGeneral",
+    "DtypeFloatSpecific",
+    "DtypeFixedSpecific",
+    "DtypeIntSpecific",
+    "SampleMode",
+    "MaskDescription",
+    "Description"
+   ],
+   "values":[
+    "Does not match attributes exactly",
+    "Ignore",
+    "Ignore",
+    "Ignore",
+    "1-D",
+    "Is...",
+    "Floating-point",
+    "Any floating-point",
+    "Any fixed-point",
+    "Any integer",
+    "Ignore",
+    "dsp:DSPSignalAttributesBlockDialog:CheckAttributes_MaskDesc",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "Documentation"
+   ],
+   "tabs_idx":[
+    0,
+    11
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"SubSystem",
+   "masktype":"Check Signal Attributes",
+   "referenceblock":"dspsigattribs/Check Signal\nAttributes"
+  }
+ },
+ {
+  "sid":"estimation_velocity:284:4",
+  "inspector":{
+   "params":[
+    "SigAttribCheckMethod",
+    "Complexity",
+    "Frame",
+    "DimsCheckMethod",
+    "Dimensions",
+    "DatatypeCheckMethod",
+    "DatatypeGeneral",
+    "DtypeFloatSpecific",
+    "DtypeFixedSpecific",
+    "DtypeIntSpecific",
+    "SampleMode",
+    "MaskDescription",
+    "Description"
+   ],
+   "values":[
+    "Does not match attributes exactly",
+    "Ignore",
+    "Ignore",
+    "Ignore",
+    "1-D",
+    "Is...",
+    "Floating-point",
+    "Any floating-point",
+    "Any fixed-point",
+    "Any integer",
+    "Ignore",
+    "dsp:DSPSignalAttributesBlockDialog:CheckAttributes_MaskDesc",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "Documentation"
+   ],
+   "tabs_idx":[
+    0,
+    11
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"SubSystem",
+   "masktype":"Check Signal Attributes",
+   "referenceblock":"dspsigattribs/Check Signal\nAttributes"
+  }
+ },
+ {
+  "sid":"estimation_velocity:284:5",
+  "inspector":{
+   "params":[
+    "SigAttribCheckMethod",
+    "Complexity",
+    "Frame",
+    "DimsCheckMethod",
+    "Dimensions",
+    "DatatypeCheckMethod",
+    "DatatypeGeneral",
+    "DtypeFloatSpecific",
+    "DtypeFixedSpecific",
+    "DtypeIntSpecific",
+    "SampleMode",
+    "MaskDescription",
+    "Description"
+   ],
+   "values":[
+    "Does not match attributes exactly",
+    "Ignore",
+    "Ignore",
+    "Ignore",
+    "1-D",
+    "Is...",
+    "Floating-point",
+    "Any floating-point",
+    "Any fixed-point",
+    "Any integer",
+    "Ignore",
+    "dsp:DSPSignalAttributesBlockDialog:CheckAttributes_MaskDesc",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "Documentation"
+   ],
+   "tabs_idx":[
+    0,
+    11
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"SubSystem",
+   "masktype":"Check Signal Attributes",
+   "referenceblock":"dspsigattribs/Check Signal\nAttributes"
+  }
+ }
+]

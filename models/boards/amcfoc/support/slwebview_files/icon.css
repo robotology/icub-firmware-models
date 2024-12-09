@@ -1,0 +1,15 @@
+.SimulinkModelIcon_icon,
+.BlockIcon_icon,
+.SubSystemIcon_icon,
+.Chart_icon,
+.LineIcon_icon,
+.MdlRefBlockIcon_icon,
+.Transition_icon { background-image: url('icon.png'); width: 16px; height: 16px; }
+
+.SimulinkModelIcon_icon { background-position: -0px; }
+.BlockIcon_icon { background-position: -16px; }
+.SubSystemIcon_icon { background-position: -32px; }
+.Chart_icon { background-position: -48px; }
+.LineIcon_icon { background-position: -64px; }
+.MdlRefBlockIcon_icon { background-position: -80px; }
+.Transition_icon { background-position: -96px; }
