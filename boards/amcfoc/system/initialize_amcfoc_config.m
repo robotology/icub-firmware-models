@@ -9,7 +9,7 @@
 function initialize_amcfoc_config
 AmcfocInitConf(1) = struct;
 AmcfocInitConf(1).thresholds = struct;
-AmcfocInitConf(1).thresholds.jntVelMax = single(1000);
+AmcfocInitConf(1).thresholds.jntVelMax = single(60000);
 AmcfocInitConf(1).thresholds.motorNominalCurrents = single(1);
 AmcfocInitConf(1).thresholds.motorPeakCurrents = single(2);
 AmcfocInitConf(1).thresholds.motorOverloadCurrents = single(3);
@@ -75,5 +75,3 @@ AmcfocInitConf(1).motor.hall_sensors_offset = single(0);
 AmcfocInitConf(2) = AmcfocInitConf(1);
 
 update_initial_actuators_config("amcfoc.sldd", "AmcfocInitConf", AmcfocInitConf);
-
-
