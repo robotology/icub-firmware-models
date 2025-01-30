@@ -1,0 +1,58 @@
+[
+ {
+  "sid":"supervisor:1:1518",
+  "inspector":{
+   "params":[
+    "ExecutionOrder",
+    "LabelString",
+    "Description",
+    "Document"
+   ],
+   "values":[
+    1,
+    "{ConfigurationParameters.thresholds.motorNominalCurrents = abs(ev.limits_content.nominal);\nConfigurationParameters.thresholds.motorPeakCurrents = abs(ev.limits_content.peak);\nConfigurationParameters.thresholds.motorOverloadCurrents = abs(ev.limits_content.overload);}",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"supervisor:1:1519",
+  "inspector":{
+   "params":[
+    "ExecutionOrder",
+    "LabelString",
+    "Description",
+    "Document"
+   ],
+   "values":[
+    1,
+    "[areLimitsSet == false]\n{areLimitsSet = true;\nsend(initialControlModeTrigger, ControlModeHandler);}",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes"
+   ],
+   "tabs_idx":0
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ }
+]

@@ -1,0 +1,78 @@
+[
+ {
+  "hid":513,
+  "sid":"filter_current",
+  "rsid":"filter_current",
+  "esid":"motion_controller:10",
+  "parent":512,
+  "children":[
+  ],
+  "name":"Current Filter (filter_current)",
+  "fullname":"AMC_BLDC/Motion Controller Single (motion_controller_single)/Motion Controller (motion_controller)/Estimation/Current Filter (filter_current)",
+  "label":"Current Filter (filter_current)",
+  "className":"Simulink.ModelReference",
+  "icon":"MdlRefBlockIcon_icon",
+  "svg":"support/slwebview_files/filter_current_d.svg",
+  "thumbnail":"support/slwebview_files/filter_current_d.png",
+  "elements":[
+   {
+    "sid":"filter_current:262",
+    "rsid":"filter_current:262",
+    "name":"ControlOutputs",
+    "label":"ControlOutputs",
+    "className":"Simulink.Inport",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"filter_current:264",
+    "rsid":"filter_current:264",
+    "name":"Bus\nSelector3",
+    "label":"Bus Selector3",
+    "className":"Simulink.BusSelector",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"filter_current:296",
+    "rsid":"filter_current:296",
+    "name":"Median\nFilter",
+    "label":"Median Filter",
+    "className":"Simulink.MATLABSystem",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"filter_current:235",
+    "rsid":"filter_current:235",
+    "name":"FilteredCurrent",
+    "label":"FilteredCurrent",
+    "className":"Simulink.Outport",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"filter_current:262#out:1;line",
+    "rsid":"filter_current:262#out:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"filter_current:264#out:1;line",
+    "rsid":"filter_current:264#out:1;line",
+    "name":"<Iq_fbk>",
+    "label":"<Iq_fbk>",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"filter_current:296#out:1;line",
+    "rsid":"filter_current:296#out:1;line",
+    "name":"current",
+    "label":"current",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   }
+  ],
+  "sysViewURL":"support/slwebview_files/filter_current_d.json",
+  "sameAsElement":false
+ }
+]
