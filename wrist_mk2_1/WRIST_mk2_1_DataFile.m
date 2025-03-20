@@ -620,7 +620,7 @@ smiData.Solid(10).ID = "";
 
 %Inertia Type - Custom
 %Visual Properties - Simple
-smiData.Solid(1).mass = 0.028884661512342855;  % kg   % braccetto basso 1
+smiData.Solid(1).mass = 0.024884661512342855;  % kg   % braccetto basso 1
 smiData.Solid(1).CoM = [9.618529092511519 0 8.4172748053068212];  % mm
 smiData.Solid(1).MoI = [3.1389320139055501 6.8471171381360625 6.2066352185336786];  % kg*mm^2
 smiData.Solid(1).PoI = [0 -2.3259035613080883 -0.077653505572987322];  % kg*mm^2
@@ -690,7 +690,7 @@ smiData.Solid(7).ID = "IC_021_P_200_prt";
 
 %Inertia Type - Custom
 %Visual Properties - Simple
-smiData.Solid(8).mass = 0.025039078608140343;  % kg % braccetto basso 2
+smiData.Solid(8).mass = 0.021039078608140343;  % kg % braccetto basso 2
 smiData.Solid(8).CoM = [10.955821377320252 -0.00026447213625750303 6.4180618151520159];  % mm
 smiData.Solid(8).MoI = [1.4009844892485339 4.5857014233326696 4.3369079525500061];  % kg*mm^2
 smiData.Solid(8).PoI = [0 -1.2607675534999061 0.011300639843069605];  % kg*mm^2
@@ -700,7 +700,7 @@ smiData.Solid(8).ID = "IC_021_P_178_prt";
 
 %Inertia Type - Custom
 %Visual Properties - Simple
-smiData.Solid(9).mass = 0.029786030562994066;  % kg % braccetto basso 3
+smiData.Solid(9).mass = 0.025786030562994066;  % kg % braccetto basso 3
 smiData.Solid(9).CoM = [8.1401663025800453 0.00074813321254532336 4.1923633631781581];  % mm
 smiData.Solid(9).MoI = [1.0075982663273408 4.5430669848108014 4.9223585571731494];  % kg*mm^2
 smiData.Solid(9).PoI = [6.1612534937062141e-05 -0.62370591124366226 -0.018626496125503562];  % kg*mm^2
