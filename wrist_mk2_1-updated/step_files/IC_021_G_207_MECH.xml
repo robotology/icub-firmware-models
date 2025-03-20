@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="lprotopapa" on="03/20/25||09:25:44" using="Simscape Multibody Link Version 7.4" from="Pro/Engineer Creo 9.0 - 2024094"/>
+<ModelUnits mass="kg" length="mm"/>
+<RootAssembly name="IC_021_G_207_MECH" uid="IC_021_G_207_MECH_asm" version="39497">
+<AssemblyFile name="IC_021_G_207_MECH.asm" type="ProEngineer Assembly"/>
+<InstanceTree>
+<Instance name="IC_021_G_204" uid="5795" entityUid="IC_021_G_204_asm" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 -8.8818454293412114e-16 0</Translation>
+</Transform>
+<Instance name="IC_021_P_195" grounded="true" uid="70" entityUid="IC_021_P_195_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="S2-5--_-_I2338_B" uid="60" entityUid="S2-5--_-_I2338_B_prt">
+<Transform>
+<Rotation>-1 0 0 0 0 1 0 1 0</Rotation>
+<Translation>25.80755703277644 2 18.399999999999999</Translation>
+</Transform>
+</Instance>
+<Instance name="S2-5--_-_I2338_B" uid="63" entityUid="S2-5--_-_I2338_B_prt">
+<Transform>
+<Rotation>1 0 0 0 0 -1 0 1 0</Rotation>
+<Translation>25.80755703277644 -2 18.399999999999999</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="IC_021_G_189" uid="5796" entityUid="IC_021_G_189_asm" rigid="true">
+<Transform>
+<Rotation>-4.8076352630089718e-05 0.49999999768866243 -0.86602540378443971 -0.99999999537732864 -9.6152705259311438e-05 5.0134863708445332e-16 -8.3270685396910757e-05 0.86602539978108894 0.49999999999999806</Rotation>
+<Translation>1.3500311979441904e-13 6.6125099782134027e-15 46.29999999999994</Translation>
+</Transform>
+<Instance name="IC_021_P_189" grounded="true" uid="92" entityUid="IC_021_P_189_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="87" entityUid="618-4_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 -32.799999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="91" entityUid="618-4_prt">
+<Transform>
+<Rotation>-0.44721359549995848 -0.22360679774997888 0.86602540378443849 0 0.96824583655185437 0.24999999999999997 -0.89442719099991574 0.11180339887498959 -0.4330127018922198</Rotation>
+<Translation>14.116214081686344 4.0749999999999975 -7.0581070408431863</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="IC_021_P_196" uid="5797" entityUid="IC_021_P_196_prt">
+<Transform>
+<Rotation>-0.49999999999999806 -0.86602540378443971 0 0 5.0134863708445115e-16 1 -0.86602540378443971 0.49999999999999806 0</Rotation>
+<Translation>34.467811070620833 -1.3341165778291111e-14 26.399999999999999</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_169" uid="165" entityUid="IC_021_P_169_prt">
+<Transform>
+<Rotation>0.49999999999999806 0 -0.86602540378443971 0 1 5.0134863708445332e-16 0.86602540378443971 0 0.49999999999999806</Rotation>
+<Translation>26.240569734668657 -8.5783537259890063e-15 31.150000000000002</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="170" entityUid="618-4_prt">
+<Transform>
+<Rotation>0.49999999999999806 0 -0.86602540378443971 0 1 0 0.86602540378443971 0 0.49999999999999806</Rotation>
+<Translation>25.114736709748879 -4.7055873291247191e-15 31.799999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_200" uid="175" entityUid="IC_021_P_200_prt">
+<Transform>
+<Rotation>0.49999999999999806 0 -0.86602540378443971 0 1 0 0.86602540378443971 0 0.49999999999999806</Rotation>
+<Translation>21.650635094611122 -3.1902062435520901e-15 33.799999999999983</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_G_205" uid="5803" entityUid="IC_021_G_205_asm" rigid="true">
+<Transform>
+<Rotation>-0.49999999999999994 0.86602540378443871 0 -0.86602540378443871 -0.49999999999999994 0 0 0 1</Rotation>
+<Translation>-7.6918507455342622e-16 0 7.5999999999999996</Translation>
+</Transform>
+<Instance name="IC_021_P_194" grounded="true" uid="75" entityUid="IC_021_P_194_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="S2-5--_-_I2338_B" uid="60" entityUid="S2-5--_-_I2338_B_prt">
+<Transform>
+<Rotation>1 0 0 0 0 -1 0 1 0</Rotation>
+<Translation>25.807557032776444 7 10.799999999999999</Translation>
+</Transform>
+</Instance>
+<Instance name="S2-5--_-_I2338_B" uid="63" entityUid="S2-5--_-_I2338_B_prt">
+<Transform>
+<Rotation>-1 0 0 0 0 1 0 1 0</Rotation>
+<Translation>25.807557032776444 -7 10.799999999999999</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="IC_021_G_190" uid="5930" entityUid="IC_021_G_190_asm" rigid="true">
+<Transform>
+<Rotation>-0.8660254035381213 -0.25000000085326801 0.4330127018922198 0.50000000042663428 -0.43301270139958264 0.75 -8.5326909426974861e-10 0.86602540378443971 0.49999999999999845</Rotation>
+<Translation>-6.7501559897209518e-14 -1.1723955140041653e-13 46.299999999999947</Translation>
+</Transform>
+<Instance name="IC_021_P_190" grounded="true" uid="92" entityUid="IC_021_P_190_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="87" entityUid="618-4_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 -32.799999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="91" entityUid="618-4_prt">
+<Transform>
+<Rotation>-0.44721359549995848 -0.22360679774997888 0.86602540378443849 0 0.96824583655185437 0.24999999999999997 -0.89442719099991574 0.11180339887498959 -0.4330127018922198</Rotation>
+<Translation>14.116214081686344 4.0749999999999975 -7.0581070408431863</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="IC_021_P_196" uid="5798" entityUid="IC_021_P_196_prt">
+<Transform>
+<Rotation>-1.5192754831971909e-09 0.43301270189222041 0.90138781886599673 0.55470019683248917 0.74999999999999989 -0.36028834512650837 -0.83205029393300367 0.49999999999999994 -0.24019223211003926</Rotation>
+<Translation>-17.233905535310438 -29.850000000000097 26.399999999999959</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_169" uid="166" entityUid="IC_021_P_169_prt">
+<Transform>
+<Rotation>0 0.90138781886599717 0.4330127018922198 -0.55470019622522759 -0.36028834606144694 0.75 0.83205029433784472 -0.24019223070763035 0.49999999999999845</Rotation>
+<Translation>-13.120284867334327 -22.725000000000136 31.149999999999995</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="171" entityUid="618-4_prt">
+<Transform>
+<Rotation>0 0.90138781886599717 0.4330127018922198 -0.5547001962252277 -0.36028834606144683 0.75 0.83205029433784505 -0.24019223070763021 0.49999999999999856</Rotation>
+<Translation>-12.557368354874434 -21.750000000000128 31.799999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_200" uid="176" entityUid="IC_021_P_200_prt">
+<Transform>
+<Rotation>0 0.90138781886599717 0.43301270189221974 -0.5547001962252277 -0.36028834606144677 0.75 0.83205029433784505 -0.24019223070763018 0.49999999999999856</Rotation>
+<Translation>-10.825317547305556 -18.750000000000124 33.799999999999983</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_G_206" uid="5931" entityUid="IC_021_G_206_asm" rigid="true">
+<Transform>
+<Rotation>-0.49999999999999994 -0.86602540378443871 0 0.86602540378443871 -0.49999999999999994 0 0 0 1</Rotation>
+<Translation>7.6918507455342622e-16 0 15.199999999999999</Translation>
+</Transform>
+<Instance name="IC_021_P_193" grounded="true" uid="77" entityUid="IC_021_P_193_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="S2-5--_-_I2338_B" uid="60" entityUid="S2-5--_-_I2338_B_prt">
+<Transform>
+<Rotation>1 0 0 0 0 -1 0 1 0</Rotation>
+<Translation>25.80755703277644 7 3.1999999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="S2-5--_-_I2338_B" uid="63" entityUid="S2-5--_-_I2338_B_prt">
+<Transform>
+<Rotation>-1 0 0 0 0 1 0 1 0</Rotation>
+<Translation>25.80755703277644 -7 3.1999999999999997</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="IC_021_G_187" uid="5932" entityUid="IC_021_G_187_asm" rigid="true">
+<Transform>
+<Rotation>0.86602540451407373 -0.24999999747246912 0.43301270189222013 0.4999999987362348 0.43301270335148762 -0.75 -2.5275297133031671e-09 0.86602540378443993 0.49999999999999845</Rotation>
+<Translation>-5.1514348342607263e-14 9.2370555648813024e-14 46.29999999999994</Translation>
+</Transform>
+<Instance name="IC_021_P_187" grounded="true" uid="92" entityUid="IC_021_P_187_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="87" entityUid="618-4_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 -32.799999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="91" entityUid="618-4_prt">
+<Transform>
+<Rotation>-0.44721359549995848 -0.22360679774997888 0.86602540378443849 0 0.96824583655185437 0.24999999999999997 -0.89442719099991574 0.11180339887498959 -0.4330127018922198</Rotation>
+<Translation>14.116214081686344 4.0749999999999975 -7.0581070408431863</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="IC_021_P_196" uid="5799" entityUid="IC_021_P_196_prt">
+<Transform>
+<Rotation>2.5430431665918182e-05 0.4330127018922203 0.90138781850726857 0.55471036065055668 -0.75 0.36027269642165233 0.83204351757598749 0.49999999999999822 -0.24021570485665478</Rotation>
+<Translation>-17.233905535310392 29.850000000000122 26.399999999999999</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_169" uid="167" entityUid="IC_021_P_169_prt">
+<Transform>
+<Rotation>0 0.90138781886599695 0.43301270189222013 -0.55470019622522759 0.36028834606144716 -0.75 -0.83205029433784472 -0.24019223070763049 0.49999999999999845</Rotation>
+<Translation>-13.12028486733432 22.725000000000108 31.149999999999988</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="172" entityUid="618-4_prt">
+<Transform>
+<Rotation>0 0.90138781886599695 0.43301270189222019 -0.55470019622522759 0.36028834606144716 -0.75 -0.83205029433784472 -0.24019223070763052 0.49999999999999839</Rotation>
+<Translation>-12.557368354874434 21.750000000000099 31.799999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_200" uid="177" entityUid="IC_021_P_200_prt">
+<Transform>
+<Rotation>0 0.90138781886599695 0.43301270189222013 -0.55470019622522759 0.36028834606144711 -0.75 -0.83205029433784472 -0.24019223070763049 0.49999999999999839</Rotation>
+<Translation>-10.825317547305554 18.750000000000099 33.799999999999969</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_181" uid="185" entityUid="IC_021_P_181_prt">
+<Transform>
+<Rotation>0.99999999818980811 4.8075974739823554e-05 3.6181277947556834e-05 -4.8073717596334227e-05 0.99999999689866625 -6.2382578514348758e-05 -3.6184276938615457e-05 6.2380839032885984e-05 0.99999999739966472</Rotation>
+<Translation>1.540196454356105e-13 7.5681546043218317e-15 46.299999999999912</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_196" uid="5800" entityUid="IC_021_P_196_prt">
+<Transform>
+<Rotation>-0.13190668663114558 0.49995836407946798 0.85594524369785185 -0.076230203572981853 -0.8660494379574023 0.49411266637973295 0.98832665758099147 -7.2115529781535695e-05 0.15234963969152007</Rotation>
+<Translation>4.6496127859391816 -8.0542597730038352 46.299329325572984</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_169" uid="168" entityUid="IC_021_P_169_prt">
+<Transform>
+<Rotation>0.86594378562530339 -0.013527539462192401 0.49995836407946753 0.49989606832763511 -0.0078925207785200957 -0.86604943795740263 0.015661449725070387 0.99987734937434181 -7.2115529781147103e-05</Rotation>
+<Translation>9.3992172446941264 -16.28172943359916 46.298644228040054</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="173" entityUid="618-4_prt">
+<Transform>
+<Rotation>0.86604944020941244 3.6054762387860515e-05 0.49995836407946753 0.49995836537952165 -6.2455614197367659e-05 -0.86604943795740263 0 0.99999999739967516 -7.2115529781147103e-05</Rotation>
+<Translation>10.049163117997434 -17.407593702943785 46.298550477851336</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_200" uid="178" entityUid="IC_021_P_200_prt">
+<Transform>
+<Rotation>0.86604944020941244 3.605476238789113e-05 0.49995836407946753 0.49995836537952165 -6.245561419742069e-05 -0.86604943795740263 0 0.99999999739967516 -7.2115529781208333e-05</Rotation>
+<Translation>12.048996574315305 -20.871791454773398 46.298262015732213</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_196" uid="5801" entityUid="IC_021_P_196_prt">
+<Transform>
+<Rotation>4.9263498781896107e-10 -1 -7.3895239963022996e-10 1 4.926349883582758e-10 -7.2983691276296856e-10 7.2983691312700237e-10 -7.389523992706868e-10 1</Rotation>
+<Translation>-9.3000000000000789 4.5813770555014344e-09 46.299999993127656</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_169" uid="169" entityUid="IC_021_P_169_prt">
+<Transform>
+<Rotation>-4.9263459978021718e-10 -7.389520384482038e-10 -1 -1 0 4.9263459978021718e-10 0 1 -7.389520384482038e-10</Rotation>
+<Translation>-18.800000000000068 9.2614095281717823e-09 46.29999998610765</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="174" entityUid="618-4_prt">
+<Transform>
+<Rotation>-4.9263454426906585e-10 -7.3895209395935493e-10 -1 -1 0 4.9263454426906585e-10 0 1 -7.3895209395935493e-10</Rotation>
+<Translation>-20.10000000000008 9.9018280796947522e-09 46.299999985146989</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_200" uid="179" entityUid="IC_021_P_200_prt">
+<Transform>
+<Rotation>-4.9263454426906585e-10 -7.3895215519169487e-10 -1 -1 0 4.9263454426906585e-10 0 1 -7.3895215519169487e-10</Rotation>
+<Translation>-24.10000000000008 1.1872366256771016e-08 46.299999982191189</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_196" uid="5802" entityUid="IC_021_P_196_prt">
+<Transform>
+<Rotation>0.86602540299016606 0.50000000126376476 1.058092274101157e-05 -0.50000000122647703 0.86602540305480391 -6.1063710847021685e-06 -1.2216533431544385e-05 -2.1889040463499872e-09 0.99999999992537814</Rotation>
+<Translation>4.6500000117529607 8.0540362484097781 46.299999979643104</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_169" uid="129" entityUid="IC_021_P_169_prt">
+<Transform>
+<Rotation>-0.86409405151740182 0.057805439782748561 0.50000000126376476 0.49888493509869553 -0.033373983809773515 0.86602540305480391 0.066747971233678635 0.99776986742243723 -2.1889046998568866e-09</Rotation>
+<Translation>9.4000000237587518 16.281277577430465 46.29999995884851</Translation>
+</Transform>
+</Instance>
+<Instance name="618-4" uid="131" entityUid="618-4_prt">
+<Transform>
+<Rotation>-0.86602540305480391 1.0944523526947036e-09 0.50000000126376476 0.50000000126376476 1.895647074942114e-09 0.86602540305480391 0 1 -2.1889046998568866e-09</Rotation>
+<Translation>10.050000025401646 17.407110601401712 46.299999956002935</Translation>
+</Transform>
+</Instance>
+<Instance name="IC_021_P_200" uid="133" entityUid="IC_021_P_200_prt">
+<Transform>
+<Rotation>-0.86602540305480391 1.0944523833108737e-09 0.50000000126376476 0.50000000126376476 1.8956471279708759e-09 0.86602540305480391 0 1 -2.1889047610892267e-09</Rotation>
+<Translation>12.050000030456705 20.871212213620925 46.299999947247322</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident_5795_0">
+<ConstraintGeometry geomType="line">
+<Position>0 0 61.30177096402074</Position>
+<Axis>0 0 -61.301770964020768</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>5795</Uid>
+<Uid>70</Uid>
+</InstancePath>
+<Position>0 8.8817841970012523e-16 0</Position>
+<Axis>0 0 6.1725615892233803</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_5795_1">
+<ConstraintGeometry geomType="plane">
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5795</Uid>
+<Uid>70</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric_5796_0">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5795</Uid>
+<Uid>70</Uid>
+</InstancePath>
+<Position>28.405633244129724 0 29.899999999999999</Position>
+<Axis>-0.86602540378443971 0 0.49999999999999822</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5796</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<Position>0 0 -0.125</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident_5796_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5795</Uid>
+<Uid>70</Uid>
+</InstancePath>
+<Position>30.90563324412971 4 34.23012701892219</Position>
+<Axis>-0.8660254037844396 0 0.49999999999999817</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5796</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Rigid name="Rigid_5797_0">
+<InstancePath>
+<Uid>5796</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>5797</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_165_0">
+<InstancePath>
+<Uid>5796</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>165</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_170_0">
+<InstancePath>
+<Uid>165</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>170</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_175_0">
+<InstancePath>
+<Uid>170</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>175</Uid>
+</InstancePath>
+</Rigid>
+<Coincident name="Coincident_5803_0">
+<ConstraintGeometry geomType="line">
+<Position>0 0 61.30177096402074</Position>
+<Axis>0 0 -61.301770964020768</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>5803</Uid>
+<Uid>75</Uid>
+</InstancePath>
+<Position>0 8.8817841970012523e-16 0</Position>
+<Axis>0 0 6.0999999999999996</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance_5803_1">
+<ConstraintGeometry geomType="plane">
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5803</Uid>
+<Uid>75</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric_5930_0">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5803</Uid>
+<Uid>75</Uid>
+</InstancePath>
+<Position>28.405633244129731 -8.8817841970012523e-16 22.300000000000004</Position>
+<Axis>-0.86602540378443971 0 0.499999999999998</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5930</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<Position>0 0 -0.125</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident_5930_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5803</Uid>
+<Uid>75</Uid>
+</InstancePath>
+<Position>30.905633244129728 4 26.630127018922199</Position>
+<Axis>-0.86602540378443982 0 0.49999999999999806</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5930</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Rigid name="Rigid_5798_0">
+<InstancePath>
+<Uid>5930</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>5798</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_166_0">
+<InstancePath>
+<Uid>5930</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>166</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_171_0">
+<InstancePath>
+<Uid>166</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>171</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_176_0">
+<InstancePath>
+<Uid>171</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>176</Uid>
+</InstancePath>
+</Rigid>
+<Coincident name="Coincident_5931_0">
+<ConstraintGeometry geomType="line">
+<Position>0 0 61.30177096402074</Position>
+<Axis>0 0 -61.301770964020768</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>5931</Uid>
+<Uid>77</Uid>
+</InstancePath>
+<Position>0 8.8817841970012523e-16 0</Position>
+<Axis>0 0 6.0999999999999996</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance_5931_1">
+<ConstraintGeometry geomType="plane">
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5931</Uid>
+<Uid>77</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric_5932_0">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5931</Uid>
+<Uid>77</Uid>
+</InstancePath>
+<Position>-8.2770326798182765 0 35.878747045784387</Position>
+<Axis>-0.86602540378443971 0 0.49999999999999817</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5932</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<Position>0 0 -0.125</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident_5932_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5931</Uid>
+<Uid>77</Uid>
+</InstancePath>
+<Position>30.905633244129714 4 19.030127018922197</Position>
+<Axis>-0.86602540378443971 0 0.49999999999999817</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5932</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Rigid name="Rigid_5799_0">
+<InstancePath>
+<Uid>5932</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>5799</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_167_0">
+<InstancePath>
+<Uid>5932</Uid>
+<Uid>87</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>167</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_172_0">
+<InstancePath>
+<Uid>167</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>172</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_177_0">
+<InstancePath>
+<Uid>172</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>177</Uid>
+</InstancePath>
+</Rigid>
+<Concentric name="Concentric_185_0">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5796</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<Position>0 0 -0.125</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>185</Uid>
+</InstancePath>
+<Position>8.1499999999999986 -14.116214081686351 0</Position>
+<Axis>0.49999999999999994 -0.86602540378443871 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident_185_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5796</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>185</Uid>
+</InstancePath>
+<Position>8.1499999999999986 -14.116214081686351 0</Position>
+<Axis>0.49999999999999994 -0.86602540378443871 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric_185_2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5930</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<Position>0 0 -0.125</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>185</Uid>
+</InstancePath>
+<Position>-16.300000000000001 9.980943431275365e-16 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance_185_3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5930</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>185</Uid>
+</InstancePath>
+<Position>-16.300000000000001 9.9809434312753493e-16 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric_185_4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>5932</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<Position>0 0 -0.125</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>185</Uid>
+</InstancePath>
+<Position>8.1500000000000021 14.116214081686355 0</Position>
+<Axis>0.5 0.86602540378443871 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance_185_5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5932</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>185</Uid>
+</InstancePath>
+<Position>8.1500000000000021 14.116214081686355 0</Position>
+<Axis>0.5 0.86602540378443871 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Rigid name="Rigid_5800_0">
+<InstancePath>
+<Uid>5796</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>5800</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_168_0">
+<InstancePath>
+<Uid>5796</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>168</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_173_0">
+<InstancePath>
+<Uid>168</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>173</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_178_0">
+<InstancePath>
+<Uid>173</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>178</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_5801_0">
+<InstancePath>
+<Uid>5930</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>5801</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_169_0">
+<InstancePath>
+<Uid>5930</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>169</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_174_0">
+<InstancePath>
+<Uid>169</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>174</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_179_0">
+<InstancePath>
+<Uid>174</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>179</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_5802_0">
+<InstancePath>
+<Uid>5932</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>5802</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_129_0">
+<InstancePath>
+<Uid>5932</Uid>
+<Uid>91</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>129</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_131_0">
+<InstancePath>
+<Uid>129</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>131</Uid>
+</InstancePath>
+</Rigid>
+<Rigid name="Rigid_133_0">
+<InstancePath>
+<Uid>131</Uid>
+</InstancePath>
+<InstancePath>
+<Uid>133</Uid>
+</InstancePath>
+</Rigid>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="IC_021_G_204" uid="IC_021_G_204_asm" version="330">
+<AssemblyFile name="IC_021_G_204.asm" type="ProEngineer Assembly"/>
+</Assembly>
+<Assembly name="IC_021_G_189" uid="IC_021_G_189_asm" version="445">
+<AssemblyFile name="IC_021_G_189.asm" type="ProEngineer Assembly"/>
+</Assembly>
+<Assembly name="IC_021_G_205" uid="IC_021_G_205_asm" version="342">
+<AssemblyFile name="IC_021_G_205.asm" type="ProEngineer Assembly"/>
+</Assembly>
+<Assembly name="IC_021_G_190" uid="IC_021_G_190_asm" version="447">
+<AssemblyFile name="IC_021_G_190.asm" type="ProEngineer Assembly"/>
+</Assembly>
+<Assembly name="IC_021_G_206" uid="IC_021_G_206_asm" version="357">
+<AssemblyFile name="IC_021_G_206.asm" type="ProEngineer Assembly"/>
+</Assembly>
+<Assembly name="IC_021_G_187" uid="IC_021_G_187_asm" version="446">
+<AssemblyFile name="IC_021_G_187.asm" type="ProEngineer Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="618-4" uid="618-4_prt" version="1765">
+<PartFile name="618-4.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.00069999999999999999</Mass>
+<CenterOfMass>0 0 1.25</CenterOfMass>
+<Inertia>0.0046225159967306509 0.0046225162652690881 0.0086425972917456746 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="618-4_prt.step" type="STEP"/>
+</Part>
+<Part name="IC_021_P_169" uid="IC_021_P_169_prt" version="473">
+<PartFile name="IC_021_P_169.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>8.3661774754377959e-05</Mass>
+<CenterOfMass>0 0 0.64999999999999991</CenterOfMass>
+<Inertia>0.00070638427353110933 0.000706384229487821 0.0013892037697964472 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="ic_021_p_169_prt.step" type="STEP"/>
+</Part>
+<Part name="IC_021_P_181" uid="IC_021_P_181_prt" version="9054">
+<PartFile name="IC_021_P_181.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.021188357245777188</Mass>
+<CenterOfMass>0.78973726062917748 0 4.696960055006512</CenterOfMass>
+<Inertia>1.6075566141755702 1.5886797233781722 2.5064167139347822 0 -0.075342913947367904 0</Inertia>
+</MassProperties>
+<GeometryFile name="ic_021_p_181_prt.step" type="STEP"/>
+</Part>
+<Part name="IC_021_P_187" uid="IC_021_P_187_prt" version="4253">
+<PartFile name="IC_021_P_187.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.010630158396058093</Mass>
+<CenterOfMass>8.7223560364148565 2.4896824890913072 -20.455966249221632</CenterOfMass>
+<Inertia>1.2469393520304655 1.6346787555514191 0.67488666128392627 -0.17782266972591515 -0.65511279227386621 -0.11690726834013568</Inertia>
+</MassProperties>
+<GeometryFile name="ic_021_p_187_prt.step" type="STEP"/>
+</Part>
+<Part name="IC_021_P_189" uid="IC_021_P_189_prt" version="4240">
+<PartFile name="IC_021_P_189.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.010613814909404339</Mass>
+<CenterOfMass>8.7173420394937402 2.4797509948322967 -20.473414103621366</CenterOfMass>
+<Inertia>1.2433973669714644 1.632313186476736 0.67324682241930089 -0.17625234824008729 -0.65446249064954021 -0.11649036081240829</Inertia>
+</MassProperties>
+<GeometryFile name="ic_021_p_189_prt.step" type="STEP"/>
+</Part>
+<Part name="IC_021_P_190" uid="IC_021_P_190_prt" version="4253">
+<PartFile name="IC_021_P_190.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.010580640429514138</Mass>
+<CenterOfMass>8.6885071690616194 2.4513330131048612 -20.546513098230463</CenterOfMass>
+<Inertia>1.2268556521434326 1.61241915107682 0.67189993983206264 -0.16989507821430616 -0.64752407936935996 -0.1127311906651261</Inertia>
+</MassProperties>
+<GeometryFile name="ic_021_p_190_prt.step" type="STEP"/>
+</Part>
+<Part name="IC_021_P_193" uid="IC_021_P_193_prt" version="4775">
+<PartFile name="IC_021_P_193.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.027204042005586498</Mass>
+<CenterOfMass>9.5613376104907761 0.00071160994230941494 4.2596110407051473</CenterOfMass>
+<Inertia>1.0263189584096513 5.3671863982871209 5.7428826331094252 6.2704064950260801e-05 -0.69060694813481649 -0.018599151494839334</Inertia>
+</MassProperties>
+<GeometryFile name="ic_021_p_193_prt.step" type="STEP"/>
+</Part>
+<Part name="IC_021_P_194" uid="IC_021_P_194_prt" version="3301">
+<PartFile name="IC_021_P_194.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.023749080956072574</Mass>
+<CenterOfMass>12.957552910314266 -0.00022948371131773483 6.7249307198055961</CenterOfMass>
+<Inertia>1.5025385220470198 5.4602410743146512 5.1404545802249224 0 -1.4556327426881941 0.012228861391993332</Inertia>
+</MassProperties>
+<GeometryFile name="ic_021_p_194_prt.step" type="STEP"/>
+</Part>
+<Part name="IC_021_P_195" uid="IC_021_P_195_prt" version="4266">
+<PartFile name="IC_021_P_195.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.028765923452358701</Mass>
+<CenterOfMass>11.818103334850223 0 9.0111541911941959</CenterOfMass>
+<Inertia>3.4370028617436317 8.1529449444985431 7.2590699035285962 0 -2.7454902793348461 -0.080838787722438549</Inertia>
+</MassProperties>
+<GeometryFile name="ic_021_p_195_prt.step" type="STEP"/>
+</Part>
+<Part name="IC_021_P_196" uid="IC_021_P_196_prt" version="1483">
+<PartFile name="IC_021_P_196.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.0013113477857027477</Mass>
+<CenterOfMass>0 6.662758407427833 0</CenterOfMass>
+<Inertia>0.019530537828682033 0.0029340443816019274 0.019493997537176865 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="ic_021_p_196_prt.step" type="STEP"/>
+</Part>
+<Part name="IC_021_P_200" uid="IC_021_P_200_prt" version="2242">
+<PartFile name="IC_021_P_200.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.0014730668176934974</Mass>
+<CenterOfMass>0 0 -1.5080281522509649</CenterOfMass>
+<Inertia>0.02005830156221142 0.020706329898356763 0.038233982644485777 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="ic_021_p_200_prt.step" type="STEP"/>
+</Part>
+<Part name="S2-5--_-_I2338_B" uid="S2-5--_-_I2338_B_prt" version="2122">
+<PartFile name="S2-5--_-_I2338_B.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>0.00012499587074151885</Mass>
+<CenterOfMass>0 0 2.5</CenterOfMass>
+<Inertia>0.00028550678337392138 0.00028550685372353586 6.1789533958195409e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="s2-5--_-_i2338_b_prt.step" type="STEP"/>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
