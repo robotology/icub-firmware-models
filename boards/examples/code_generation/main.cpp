@@ -1,4 +1,4 @@
-#include "mbd/codegen_example.h"
+#include "mbd/code_generation_example.h"
 
 #include <yarp/os/all.h>
 
@@ -27,10 +27,10 @@ void printer(const std::array<double, 16>& arr, std::string pre)
 
 class fastThread : public PeriodicThread {
 private:
-    std::shared_ptr<codegen_example> mbd_;
+    std::shared_ptr<code_generation_example> mbd_;
 
 public:
-    fastThread(double period, std::shared_ptr<codegen_example> mbd) 
+    fastThread(double period, std::shared_ptr<code_generation_example> mbd) 
         : PeriodicThread(period), mbd_(std::move(mbd)) {}
     
     virtual ~fastThread() = default;
@@ -64,10 +64,10 @@ public:
 
 class slowThread : public PeriodicThread {
 private:
-    std::shared_ptr<codegen_example> mbd_;
+    std::shared_ptr<code_generation_example> mbd_;
 
 public:
-    slowThread(double period, std::shared_ptr<codegen_example> mbd) 
+    slowThread(double period, std::shared_ptr<code_generation_example> mbd) 
         : PeriodicThread(period), mbd_(std::move(mbd)) {}
     
     virtual ~slowThread() = default;
@@ -98,7 +98,7 @@ class module : public RFModule {
 private:
     std::unique_ptr<fastThread> thread_1_;
     std::unique_ptr<slowThread> thread_2_;
-    std::shared_ptr<codegen_example> mbd_;
+    std::shared_ptr<code_generation_example> mbd_;
 
 public:
     module() {}
@@ -106,7 +106,7 @@ public:
     virtual ~module() = default;
 
     bool configure(ResourceFinder& rf) override {
-        mbd_ = std::make_shared<codegen_example>();
+        mbd_ = std::make_shared<code_generation_example>();
 
         mbd_->initialize();
 
