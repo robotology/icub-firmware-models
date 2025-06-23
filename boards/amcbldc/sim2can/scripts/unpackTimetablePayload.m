@@ -1,5 +1,6 @@
-% Copyright (C) 2022 Fondazione Istituto Italiano di Tecnologia (IIT)
+% Copyright (C) 2025 Fondazione Istituto Italiano di Tecnologia (IIT)
 % All Rights Reserved.
+
 function result_timetable = unpackTimetablePayload(can_timetable,can_payload_length, id_in_hex)
 
     arguments

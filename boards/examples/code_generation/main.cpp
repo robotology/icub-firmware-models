@@ -1,3 +1,7 @@
+// Copyright (C) 2025 Fondazione Istituto Italiano di Tecnologia (IIT)  
+// All Rights Reserved.
+// Authors: Mattia Fussi <mattia.fussi@iit.it>
+
 #include "mbd/code_generation_example.h"
 
 #include <yarp/os/all.h>

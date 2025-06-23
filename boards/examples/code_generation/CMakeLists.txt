@@ -1,3 +1,7 @@
+# Copyright (C) 2025 Fondazione Istituto Italiano di Tecnologia (IIT)  
+# All Rights Reserved.
+# Authors: Mattia Fussi <mattia.fussi@iit.it>
+
 cmake_minimum_required(VERSION 3.28)
 
 project(codegen_ex)
