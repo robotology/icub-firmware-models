@@ -69,5 +69,6 @@ AmcbldcInitConf(1).motor.inductance = single(271);
 AmcbldcInitConf(1).motor.thermal_resistance = single(16);
 AmcbldcInitConf(1).motor.thermal_time_constant = single(797.5);
 AmcbldcInitConf(1).motor.hall_sensors_offset = single(30);
+AmcbldcInitConf(1).motor.reference_encoder = ReferenceEncoder.Motor;
 
 update_initial_actuators_config("amcbldc.sldd", "AmcbldcInitConf", AmcbldcInitConf);
