@@ -1,0 +1,17 @@
+.SimulinkModelIcon_icon,
+.BlockIcon_icon,
+.SubSystemIcon_icon,
+.LineIcon_icon,
+.annotation_icon,
+.requirements_requirements_icon {
+    background:url('icon.png') no-repeat top left;
+    width:16px; 
+    height:16px; 
+}
+
+.SimulinkModelIcon_icon { background-position: -0px; }
+.BlockIcon_icon { background-position: -16px; }
+.SubSystemIcon_icon { background-position: -32px; }
+.LineIcon_icon { background-position: -48px; }
+.annotation_icon { background-position: -64px; }
+.requirements_requirements_icon { background-position: -80px; }

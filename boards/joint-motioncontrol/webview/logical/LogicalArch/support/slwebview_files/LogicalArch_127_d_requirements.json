@@ -1,0 +1,51 @@
+[
+ {
+  "sid":"LogicalArch:127#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"LogicalArch:127#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"LogicalArch:128",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"LogicalArch:128#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"LogicalArch:129",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"LogicalArch:129#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"LogicalArch:127#seg:280-10-270-10",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"LogicalArch:128#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ }
+]

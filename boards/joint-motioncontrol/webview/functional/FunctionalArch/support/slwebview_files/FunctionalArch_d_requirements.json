@@ -1,0 +1,396 @@
+[
+ {
+  "sid":"FunctionalArch:18",
+  "informer":"<html><head><meta charset=\"UTF-8\"></head><body>\n<h2><font color=\"#993300\">\"Calibrate Joint\" <i>(Component, 2 links)</i></font></h2>\n<hr>\n<font color=\"#993300\"><h3>1. link #20</h3>\nLink to Requirements Toolbox<br/>\nDocument: <font color=\"blue\">encoders_handling.slreqx</font><br/>\nLocation/Item: <font color=\"blue\">#1</font><br/>\n</font>\n<h3>Read different types of joint encoders</h3>\n\n<hr>\n<font color=\"#993300\"><h3>2. link #21</h3>\nLink to Requirements Toolbox<br/>\nDocument: <font color=\"blue\">encoders_handling.slreqx</font><br/>\nLocation/Item: <font color=\"blue\">#2</font><br/>\n</font>\n<h3>Calibrate a joint according to type</h3>\n\n</body></html>\n",
+  "viewer":{
+   "color":"orange"
+  }
+ },
+ {
+  "sid":"FunctionalArch:18#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:18#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:2#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:2#in:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:2#in:3",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:2#in:4",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:2#in:5",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:2#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:2#out:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:194",
+  "informer":"<html><head><meta charset=\"UTF-8\"></head><body>\n<h2><font color=\"#993300\">\"Health Service\" <i>(Component)</i></font></h2>\n<hr>\n<font color=\"#993300\"><h3>1. link #14</h3>\nLink to Requirements Toolbox<br/>\nDocument: <font color=\"blue\">faults_and_safety.slreqx</font><br/>\nLocation/Item: <font color=\"blue\">#1</font><br/>\n</font>\n<h3>Handle fault button</h3>\n\n</body></html>\n",
+  "viewer":{
+   "color":"orange"
+  }
+ },
+ {
+  "sid":"FunctionalArch:194#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:194#in:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:194#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:194#out:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217",
+  "informer":"<p> No Requirements </p>",
+  "viewer":{
+   "style":"stroke: orange;stroke-opacity: 1;stroke-width: 4;stroke-linejoin: miter;stroke-dasharray: none;"
+  }
+ },
+ {
+  "sid":"FunctionalArch:217#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#in:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#in:3",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148#in:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148#out:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148#out:3",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148#out:4",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:169",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:169#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:169#out:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:169#out:3",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:169#out:4",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:211",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:211#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:394-75-568-75",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:-13-115-198-95",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:-13-75-198-55",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:226--120-295--23",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:-13-195-568-195",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:45--130--17--20",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:-13-155-568-135",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:784-45-226--195",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:7--135-45--180",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:784-160-7--195",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:226--170-675--69",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:226--145-465--52",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch#seg:532-15-568-15",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:204",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:205",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:18#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148#out:2;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148#out:3;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:2#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:194#out:2;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:2#out:2;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:169#out:3;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148#out:4;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:169#out:4;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:148#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:169#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:169#out:2;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ }
+]

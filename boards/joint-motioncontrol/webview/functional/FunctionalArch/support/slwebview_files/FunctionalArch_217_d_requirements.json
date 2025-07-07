@@ -1,0 +1,206 @@
+[
+ {
+  "sid":"FunctionalArch:217#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#in:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#in:3",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:218",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:218#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:219",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:219#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:220",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:220#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:149",
+  "informer":"<html><head><meta charset=\"UTF-8\"></head><body>\n<h2><font color=\"#993300\">\"Control Joint Position\" <i>(Component, 4 links)</i></font></h2>\n<hr>\n<font color=\"#993300\"><h3>1. link #16</h3>\nLink to Requirements Toolbox<br/>\nDocument: <font color=\"blue\">control.slreqx</font><br/>\nLocation/Item: <font color=\"blue\">#1</font><br/>\n</font>\n<h3>compute minimum jerk position traj</h3>\n\n<hr>\n<font color=\"#993300\"><h3>2. link #17</h3>\nLink to Requirements Toolbox<br/>\nDocument: <font color=\"blue\">control.slreqx</font><br/>\nLocation/Item: <font color=\"blue\">#2</font><br/>\n</font>\n<h3>Compute PID control according to position error</h3>\n\n<hr>\n<font color=\"#993300\"><h3>3. link #18</h3>\nLink to Requirements Toolbox<br/>\nDocument: <font color=\"blue\">control.slreqx</font><br/>\nLocation/Item: <font color=\"blue\">#3</font><br/>\n</font>\n<h3>Accept targets from many sources</h3>\n\n<hr>\n<font color=\"#993300\"><h3>4. link #19</h3>\nLink to Requirements Toolbox<br/>\nDocument: <font color=\"blue\">encoders_handling.slreqx</font><br/>\nLocation/Item: <font color=\"blue\">#1</font><br/>\n</font>\n<h3>Read different types of joint encoders</h3>\n\n</body></html>\n",
+  "viewer":{
+   "color":"orange"
+  }
+ },
+ {
+  "sid":"FunctionalArch:149#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:149#in:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:149#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:182",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:182#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:182#in:2",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:182#in:3",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:182#out:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:221",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:221#in:1",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#seg:40-235-39-235",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#seg:390-275-391-275",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#seg:336-225-225-225",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#seg:336-225-391-225",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#seg:315-25-336-225",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#seg:568-250-560-250",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:217#seg:225-250-391-250",
+  "informer":"<p> No Requirements </p>",
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:149#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:182#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:218#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:220#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ },
+ {
+  "sid":"FunctionalArch:219#out:1;line",
+  "informer":[
+  ],
+  "viewer":[
+  ]
+ }
+]
