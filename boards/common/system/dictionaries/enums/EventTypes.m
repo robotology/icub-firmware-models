@@ -6,6 +6,7 @@ SetControlMode(2)
 SetMotorConfig(3)
 SetPid(4)
 SetTarget(5)
+SetMotorParam(6)
     end
     methods (Static = true)
         function retVal = addClassNameToEnumNames()
