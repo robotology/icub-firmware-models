@@ -3,6 +3,7 @@
 
 classdef MCOPC < Simulink.IntEnumType
     enumeration
+        Set_Parameter(0x01)
         Set_Control_Mode(0x09)
         Set_Current_Limit(0x48)
         Set_Current_PID(0x65)
