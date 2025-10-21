@@ -71,6 +71,7 @@ AmcfocInitConf(1).motor.inductance = single(0);
 AmcfocInitConf(1).motor.thermal_resistance = single(0);
 AmcfocInitConf(1).motor.thermal_time_constant = single(0);
 AmcfocInitConf(1).motor.hall_sensors_offset = single(0);
+AmcfocInitConf(1).motor.hall_sensors_swapBC = boolean(false);
 AmcfocInitConf(1).motor.reference_encoder = ReferenceEncoder.Motor;
 
 AmcfocInitConf(2) = AmcfocInitConf(1);
