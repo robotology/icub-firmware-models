@@ -1,16 +1,12 @@
 % Copyright (C) 2022 Fondazione Istitito Italiano di Tecnologia (IIT)
 % All Rights Reserved.
 
-classdef MCControlModes < Simulink.IntEnumType
+classdef MCMotorParamsSet < uint8
     enumeration
-        Idle(0x00)
-        Position(0x01)
-        OpenLoop(0x50)
-        SpeedVoltage(0x0A)
-        SpeedCurrent(0x0B)
-        Current(0x06)
-        NotConfigured(0xB0)
-        HWFault(0xA0)
+        None       (0x00)
+        Kbemf      (0x01)
+        hall       (0x02)
+        elect_vmax (0x03)
     end
     methods (Static = true)
         function retVal = addClassNameToEnumNames()
