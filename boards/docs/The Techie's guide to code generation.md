@@ -27,10 +27,14 @@ The document targets the **AMCx family** of embedded boards.
     - [Custom Code](#custom-code)
     - [Interface](#interface)
       - [Code replacement libraries](#code-replacement-libraries)
-  - [Modelling guidelines](#modelling-guidelines)
+    - [Code style](#code-style)
+    - [Verification](#verification)
+    - [Templates](#templates)
+    - [Code placement](#code-placement)
+    - [Data type replacement](#data-type-replacement)
+  - [Modelling tips and suggestions](#modelling-tips-and-suggestions)
     - [Simulink models](#simulink-models)
     - [Stateflow charts](#stateflow-charts)
-    - [Simscape ???](#simscape-)
 
 -----
 
@@ -198,16 +202,44 @@ In this section, it is useful to tick the setting *Use the same custom code sett
 
 **Code interface > Code interface packaging**:
 
-- *Nonreusable function*
-- *Reusable function*
-- *C++ class*
+The choice between these option is highly dependent on the desired code usage. Of course, *C++ class* will be available only if the target language is C++.
+
+- *Nonreusable function* : generates code which entry point functions directly access the data structure; this option is suggested for top-level architectural models
+- *Reusable function* : generates re-entrant multi-instance code; this option is needed for Simulink models that need to be referenced, especially if they need to be wrapped in special blocks (e.g. a For Each Subsystem)
+- *C++ class* : generates a class with constructor, destructor, inputs setter and outputs getter
 
 #### Code replacement libraries
 
-## Modelling guidelines
+Code replacement libraries (CRL) are sets of functions that can be used to replace native C/C++ operations, to leverage the target hardware or respect specific requirements.
+
+When clicking on the Select button, the following window will pop up.
+
+![](assets/par_crl.png)
+
+On the left the available but unused libraries are listed, while on the right we can see the ones selected for usage, with decreasing priority order.
+
+If the BSP for the Cortex-M was installed, it will appear here as available. Its CRL includes functions such as the trigonometric ones, squared root, even clark-parke transforms.
+
+It is possible to define a custom CRL, such as the iCubTech one. The iCubTech library replaces native mutex calls with custom functions that trigger interrupts. More information on how to create a custom library can be found in the [Matlab documentation](https://it.mathworks.com/help/ecoder/ug/quick-start-library-development-sc.html).
+
+### Code style
+
+In this section, you can customize the style of the generated code. You can tune the amount of parenthesis level, the usage of std::array instead of Matlab Coder's array, and the readability of the code.
+
+### Verification
+
+In this section you can leverage the code verification too
+
+### Templates
+
+The *Templates* section allows to ...
+
+### Code placement
+
+### Data type replacement
+
+## Modelling tips and suggestions
 
 ### Simulink models
 
 ### Stateflow charts
-
-### Simscape ???
