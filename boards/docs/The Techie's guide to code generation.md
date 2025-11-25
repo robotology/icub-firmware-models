@@ -27,12 +27,14 @@ The document targets the **AMCx family** of embedded boards.
     - [Custom Code](#custom-code)
     - [Interface](#interface)
       - [Code replacement libraries](#code-replacement-libraries)
-    - [Code style](#code-style)
-    - [Verification](#verification)
-    - [Templates](#templates)
-    - [Code placement](#code-placement)
-    - [Data type replacement](#data-type-replacement)
+    - [Additional sections](#additional-sections)
+      - [Code style](#code-style)
+      - [Verification](#verification)
+      - [Templates](#templates)
+      - [Code placement](#code-placement)
+      - [Data type replacement](#data-type-replacement)
   - [Modelling tips and suggestions](#modelling-tips-and-suggestions)
+    - [Dictionaries and architectural data](#dictionaries-and-architectural-data)
     - [Simulink models](#simulink-models)
     - [Stateflow charts](#stateflow-charts)
 
@@ -196,9 +198,9 @@ In this section, it is useful to tick the setting *Use the same custom code sett
 
 - [x] floating-point numbers
 - [x] absolute time
-- [ ] non-finite numbers -> add it if you expect signals to reach `inf`
+- [ ] non-finite numbers -> check it if you expect signals to reach `inf`
 - [ ] complex numbers
-- [ ] variable-size signals
+- [ ] variable-size signals -> check this if you need to dynamically allocate memory
 
 **Code interface > Code interface packaging**:
 
@@ -222,24 +224,76 @@ If the BSP for the Cortex-M was installed, it will appear here as available. Its
 
 It is possible to define a custom CRL, such as the iCubTech one. The iCubTech library replaces native mutex calls with custom functions that trigger interrupts. More information on how to create a custom library can be found in the [Matlab documentation](https://it.mathworks.com/help/ecoder/ug/quick-start-library-development-sc.html).
 
-### Code style
+### Additional sections
+
+These sections contain settings which are not critical for code generation at the moment of writing this document. Nonetheless, they might be useful to fine-tune the final product in accordance to the style and rules of the existing codebase.
+
+#### Code style
 
 In this section, you can customize the style of the generated code. You can tune the amount of parenthesis level, the usage of std::array instead of Matlab Coder's array, and the readability of the code.
 
-### Verification
+#### Verification
 
-In this section you can leverage the code verification too
+In this section you can leverage the code verification tools to check the tasks' execution times, enable SIL/PIL simulations, and enable code coverage analysis.
 
-### Templates
+#### Templates
 
-The *Templates* section allows to ...
+The *Templates* section allows to choose and custimize the template files used for code generation. You can also enable the creation of an example main file.
 
-### Code placement
+#### Code placement
 
-### Data type replacement
+In this section you can define where the custom storage classes should be placed, how it should be packaged and the naming rules.
+
+#### Data type replacement
+
+In here you can control the base data types used in the whole code generation process. 
+
+Selecting data types as *coder typedefs* will generate types that conform to the C89 standard, while *C data types* will generate types according to the C99 standard.
 
 ## Modelling tips and suggestions
 
+This chapter illustrates simple tips and advices to translate the typical coding patterns into effective Simulink components.
+
+### Dictionaries and architectural data
+
+The dictionary is a very useful feature Simulink. At its core, it's a file that contains parameters, types, bus definitions and model configurations. It can be linked to simulink models so they share  the above information, especially when referenced by a parent.
+
+See for example the screenshot below: the model `motion_controller` uses the dictionary `embeddedboard_common.sldd` to reference design data, architectural data and configurations.
+
+![](assets/dict_model_expl.png)
+
+In the *Architectural data editor* window, you can define new interfaces, that will map as struct types in the code. Interfaces are called **Buses**, and can contain elements (variables) or other buses. 
+
+It's always good practice to properly define and comment all elements in all their features, especially the unit of measurement. See an example below, in which the DC voltage supply measurement is an element of `SensorData > DriverSensors`:
+
+![](assets/dict_arch_data_editor.png)
+
+The archictectural data editor also shows tabs regarding enums and constants. Depending on your project, it is useful to define them here so they can be shared between models. Usually, it's good practice to define the sampling times of the tasks in the *Constants* tab.
+
 ### Simulink models
+
+When designing Simulink models to translate an idea into an algorithm, we always have to keep in mind that the data flows sequentially from one block to another. It might be difficult to apply this way of thinking to our pre-existing programming habits, so this section will try to help with this transition.
+
+Here are some basic suggestions:
+
+- Just as with Matlab, Simulink is very powerful when it deals with matrix calculus, signal processing and feedback control: if you want to implement a control system for a robot part, a filter for a discrete signal, a motor simulator, you can rely on Simulink for effective and comprehensive results; do not be afraid to use it
+
+- check if you desired algorithm is already implemented in an existing toolbox: chances are that the Simulink implementation is already slick and robust enough to be production ready, and can be integrated safely; just be careful with the license availability
+
+- Decision logic can become janky very quickly: keep the usage of *If* and *If action subsystems* to a minimum, since they require "verbosity" and can complicate reading the system, see for example:
+
+![](assets/sim_if.png)
+
+for more compactness and maintainability, prefer Stateflow charts and properly assign the execution order:
+
+![](assets/sim_if_chart.png)
+
+- Use iteration blocks like *do-while* and *for-each* sparingly: they can be very useful when it is necessary to wrap complex logic and repeat the operations for each input element (e.g. multiple motion controller instances); in fact, most computational blocks support matrix operations, and can apply the operations to each input element automatically; just be careful about the dimension along which the operation is performed, or you might end up with unexpected results
+
+- If you want to store a state within a Simulink model, you can you do so through *Data Store* blocks, pairing the *Read* with the *Write* and the *Memory*
+
+![](assets/sim_data_store.png)
+
+for more complex state management, consider using Stateflow charts.
 
 ### Stateflow charts
