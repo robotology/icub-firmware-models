@@ -11,10 +11,24 @@
 
 using namespace yarp::os;
 
-ExtU gInputs;
 
+ /*
+ External inputs of the generated code shared between threads. 
+ As long as different threads write different struct members, 
+ mutual exclusions between threads are not needed, provided
+ hat mutexes are used inside the generated code to avoid read/write overlap
+ */ 
+
+ExtU mbd_inputs;
+
+constrexpr double PI = 3.14152;
+
+/*
+A simple flag that controls printing
+*/
 std::atomic_flag is_printing = false;
 
+// A simple function that prints an array of numbers with a prefix
 void printer(const std::array<double, 16>& arr, std::string pre)
 {
     std::string str;
@@ -27,6 +41,9 @@ void printer(const std::array<double, 16>& arr, std::string pre)
 
 /* -----------------------------
         THREAD 1sec PERIOD
+This thread calls the generated code periodically by using a reference to it.
+The call is executed at each millisecond with the run() function. 
+A yarp::os::periodicthread is used to handle periodic calls, and handle SIGINT
 ----------------------------- */
 
 class fastThread : public PeriodicThread {
@@ -41,15 +58,15 @@ public:
 
     bool threadInit() override { 
 
-        for (size_t i = 0; i < gInputs.In1_1s.size(); i++)
+        for (size_t i = 0; i < mbd_inputs.In1_1s.size(); i++)
         {
-            gInputs.In1_1s[i] = 3.14152 + static_cast<double>(i);
+            mbd_inputs.In1_1s[i] = PI + static_cast<double>(i);
         }
         return true;
     }
 
     void run() override {
-        mbd_->setExternalInputs(&gInputs);
+        mbd_->setExternalInputs(&mbd_inputs);
         mbd_->step0();
 
         std::array<double, 16> outs1 = mbd_->getExternalOutputs().Out1_1s;
@@ -64,6 +81,9 @@ public:
 
 /* -----------------------------
         THREAD 2sec PERIOD
+This thread calls the generated code periodically by using a reference to it.
+The call is executed at each millisecond with the run() function. 
+A yarp::os::periodicthread is used to handle periodic calls, and handle SIGINT
 ----------------------------- */
 
 class slowThread : public PeriodicThread {
@@ -77,12 +97,12 @@ public:
     virtual ~slowThread() = default;
 
     bool threadInit() override { 
-        for (auto & in1 : gInputs.In2_2s) in1 = 77;
+        for (auto & in1 : mbd_inputs.In2_2s) in1 = 77;
         return true;
     }
 
     void run() override {
-        mbd_->setExternalInputs(&gInputs);
+        mbd_->setExternalInputs(&mbd_inputs);
         mbd_->step1();
 
         std::array<double, 16> outs2 = mbd_->getExternalOutputs().Out2_2s;
@@ -96,6 +116,10 @@ public:
 
 /* -----------------------------
         MODULE CLASS
+yarp::os::RFModule is a class that instantiates a periodic thread at 1sec, which
+is usually used as a health monitor for all the other threads that are spawned from it.
+It also is a yarp::os::ResourceFinder, an object that is very useful for processing
+command line arguments and configuration files.
 ----------------------------- */
 
 class module : public RFModule {
@@ -110,10 +134,17 @@ public:
     virtual ~module() = default;
 
     bool configure(ResourceFinder& rf) override {
+
+        // Instantiate a shared pointer to the code generation object.
+        // The shared pointer is useful because it keeps a count of the references,
+        // and deallocates the object when all its references are out of scope.
         mbd_ = std::make_shared<code_generation_example>();
 
         mbd_->initialize();
 
+        // We instantiate two pointers to two different threads.
+        // We pass a reference to the pointer so that the one instance of mbd code
+        // can be used by both threads, keeping one single internal state
         thread_1_ = std::make_unique<fastThread>(1.0, mbd_);
         thread_2_ = std::make_unique<slowThread>(2.0, mbd_);
 
