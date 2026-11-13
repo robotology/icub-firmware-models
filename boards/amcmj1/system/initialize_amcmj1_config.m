@@ -70,8 +70,8 @@ Amcmj1InitConf(1).motor.resistance = single(0);
 Amcmj1InitConf(1).motor.inductance = single(0);
 Amcmj1InitConf(1).motor.thermal_resistance = single(0);
 Amcmj1InitConf(1).motor.thermal_time_constant = single(0);
-Amcmj1InitConf(1).motor.hall_sensors_offset = single(0);
-Amcmj1InitConf(1).motor.hall_sensors_swapBC = boolean(false);
+Amcmj1InitConf(1).motor.hall_sensors_offset = single(30);
+Amcmj1InitConf(1).motor.hall_sensors_swapBC = boolean(true);
 Amcmj1InitConf(1).motor.reference_encoder = ReferenceEncoder.Motor;
 
 update_initial_actuators_config("amcmj1.sldd", "Amcmj1InitConf", Amcmj1InitConf);
